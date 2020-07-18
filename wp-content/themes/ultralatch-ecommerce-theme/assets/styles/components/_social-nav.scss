@@ -1,0 +1,561 @@
+/* Social Media */
+
+// set the icon size here
+$link_size: 13px;
+$spacing_size: 15px;
+$link_color: $link-color !default;
+
+.social-nav {
+
+  li {
+
+    a {
+      font-size: $link_size;
+
+      &::before {
+        display: inline-block;
+        font-family: FontAwesome;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: '\f0c0';
+        font-size: 1.25em;
+      }
+    }
+    // end a
+  }
+  // end li
+
+}
+
+// end social
+
+/******************************************************************************
+========================> Brand Icons
+*******************************************************************************/
+
+.social-nav li a[href*="facebook.com"]::before {
+  content: '\f09a';
+}
+
+.social-nav li a[href*="twitter.com"]::before {
+  content: '\f099';
+}
+
+.social-nav li a[href*="dribbble.com"]::before {
+  content: '\f17d';
+}
+
+.social-nav li a[href*="plus.google.com"]::before {
+  content: '\f0d5';
+}
+
+.social-nav li a[href*="pinterest.com"]::before {
+  content: '\f0d2';
+}
+
+.social-nav li a[href*="github.com"]::before {
+  content: '\f09b';
+}
+
+.social-nav li a[href*="tumblr.com"]::before {
+  content: '\f174';
+}
+
+.social-nav li a[href*="youtube.com"]::before {
+  content: '\f16a';
+}
+
+.social-nav li a[href*="flickr.com"]::before {
+  content: '\f16e';
+}
+
+.social-nav li a[href*="vimeo.com"]::before {
+  content: '\f27d';
+}
+
+.social-nav li a[href*="instagram.com"]::before {
+  content: '\f16d';
+}
+
+.social-nav li a[href*="linkedin.com"]::before {
+  content: '\f0e1';
+}
+
+.social-nav li a[href*="codepen"]::before {
+  content: '\f1cb';
+}
+
+.social-nav li a[href*="wordpress.org"]::before {
+  content: '\f19a';
+}
+
+.social-nav li a[href*="feedburner.com"]::before {
+  content: '\f143';
+}
+
+/******************************************************************************
+========================> Stacking
+*******************************************************************************/
+
+.social-nav .stack {
+
+  //margin-top: $spacing_size;
+
+  li + li {
+    margin-left: $spacing_size;
+  }
+
+  a {
+    color: $white;
+    position: relative;
+    width: $link_size;
+    height: $link_size;
+    padding: $link_size;
+    z-index: 3;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      margin-top: -($link_size/2);
+      left: 0;
+      line-height: $link_size;
+    }
+
+    &::before {
+      @extend .fa-stack-1x;
+      z-index: 2;
+      font-size: 1.25em;
+    }
+    &::after {
+      font-family: FontAwesome;
+      color: $brand-primary;
+      z-index: 1;
+      @extend .fa-stack-2x;
+      font-size: 2em;
+    }
+  }
+  &.circle a::after {
+    content: '\f111';
+  }
+  &.square a::after {
+    content: '\f0c8';
+  }
+  &.single-color a::after {
+    color: $link-color;
+  }
+}
+
+/******************************************************************************
+========================> Social Brand Colors
+*******************************************************************************/
+// @url https://github.com/Ferrmolina/SASS-Social-Brand-Colors/blob/master/demo/css/styles.scss
+
+/* Social / Branding Vars HEX*/
+$adobe: #ff0000;
+$alphabet: #ed1c24;
+$amazon: #ff9700;
+$android: #a4c639;
+$angularjs: #b52e31;
+$aol: #ff0b00;
+$apple: #737373;
+$archlinux: #1793d1;
+$behance: #1769ff;
+$bing: #ffb900;
+$blogger: #f57d00;
+$coke: #ed1c16;
+$digitalocean: #008bcf;
+$disqus: #2e9fff;
+$dribbble: #ea4c89;
+$dropbox: #007ee5;
+$drupal: #0077c0;
+$ebay: #083790;
+$envato: #82b541;
+$evernote: #7ac142;
+$facebook: #3b5998;
+$flickr: #ff0084;
+$flipboard: #e12828;
+$forrst: #5b9a68;
+$foursquare: #0072b1;
+$github: #333333;
+$godaddy: #7db701;
+$google_1: #4285f4;
+$google_2: #34a853;
+$google_3: #fbbc05;
+$google_4: #ea4335;
+$googleplus: #dd4b39;
+$gravatar: #1e8cbe;
+$hsbc: #db0011;
+$html5: #e34f26;
+$ibm: #006699;
+$imgur: #85bf25;
+$instagram: #125688;
+$intel: #0f7dc2;
+$jquery: #0769ad;
+$lastfm: #d51007;
+$linkedin: #007bb5;
+$mailchimp: #449a88;
+$mcdonalds: #bf0c0c;
+$mercadolibre: #ffe600;
+$microsoftoffice: #ea3e23;
+$netflix: #e50914;
+$npm: #cb3837;
+$nvidia: #76b900;
+$opera: #cc0f16;
+$oracle: #ff0000;
+$paypal: #009cde;
+$php: #8892be;
+$pinterest: #cb2027;
+$prezi: #318bff;
+$quora: #a82400;
+$reddit: #cee3f8;
+$ruby: #cc342d;
+$skype: #00acf4;
+$snapchat: #fffc00;
+$spotify: #2ebd59;
+$stackoverflow: #fe7a15;
+$starbucks: #00704a;
+$strumbleupon: #eb4924;
+$subway: #00543d;
+$telegram: #0088cc;
+$tesla: #cc0000;
+$tmobile: #e20074;
+$tumblr: #32506d;
+$twitter: #00aced;
+$typekit: #98ce1e;
+$ubuntu: #dd4814;
+$vimeo: #162221;
+$vine: #00bf8f;
+$vk: #45668e;
+$vodafone: #e60000;
+$whatsapp: #43d854;
+$windows: #00bcf2;
+$wordpress: #21759b;
+$xbox: #52b043;
+$yahoo: #410093;
+$yandex: #ffcc00;
+$youtube: #bb0000;
+$zendesk: #78a300;
+
+$colorMap: (
+  adobe: $adobe,
+  alphabet: $alphabet,
+  amazon: $amazon,
+  android: $android,
+  angularjs: $angularjs,
+  aol: $aol,
+  apple: $apple,
+  archlinux: $archlinux,
+  behance: $behance,
+  bing: $bing,
+  blogger: $blogger,
+  coke: $coke,
+  digitalocean: $digitalocean,
+  disqus: $disqus,
+  dribbble: $dribbble,
+  dropbox: $dropbox,
+  drupal: $drupal,
+  ebay: $ebay,
+  envato: $envato,
+  evernote: $evernote,
+  facebook: $facebook,
+  flickr: $flickr,
+  flipboard: $flipboard,
+  forrst: $forrst,
+  foursquare: $foursquare,
+  github: $github,
+  godaddy: $godaddy,
+  google_1: $google_1,
+  google_2: $google_2,
+  google_3: $google_3,
+  google_4: $google_4,
+  googleplus: $googleplus,
+  gravatar: $gravatar,
+  hsbc: $hsbc,
+  html5: $html5,
+  ibm: $ibm,
+  imgur: $imgur,
+  instagram: $instagram,
+  intel: $intel,
+  jquery: $jquery,
+  lastfm: $lastfm,
+  linkedin: $linkedin,
+  mailchimp: $mailchimp,
+  mcdonalds: $mcdonalds,
+  mercadolibre: $mercadolibre,
+  microsoftoffice: $microsoftoffice,
+  netflix: $netflix,
+  npm: $npm,
+  nvidia: $nvidia,
+  opera: $opera,
+  oracle: $oracle,
+  paypal: $paypal,
+  php: $php,
+  pinterest: $pinterest,
+  prezi: $prezi,
+  quora: $quora,
+  reddit: $reddit,
+  ruby: $ruby,
+  skype: $skype,
+  snapchat: $snapchat,
+  spotify: $spotify,
+  stackoverflow: $stackoverflow,
+  starbucks: $starbucks,
+  strumbleupon: $strumbleupon,
+  subway: $subway,
+  telegram: $telegram,
+  tesla: $tesla,
+  tmobile: $tmobile,
+  tumblr: $tumblr,
+  twitter: $twitter,
+  typekit: $typekit,
+  ubuntu: $ubuntu,
+  vimeo: $vimeo,
+  vine: $vine,
+  vk: $vk,
+  vodafone: $vodafone,
+  whatsapp: $whatsapp,
+  windows: $windows,
+  wordpress: $wordpress,
+  xbox: $xbox,
+  yahoo: $yahoo,
+  yandex: $yandex,
+  youtube: $youtube,
+  zendesk: $zendesk
+);
+
+//@each $className, $classValue in $colorMap {
+//  .#{$className} {
+//    &::after {
+//      color: $classValue;
+//    }
+//    color: $classValue;
+//  }
+//}
+
+/* End Social Media */
+
+.social-nav .brand {
+  li a[href*="facebook.com"]::before {
+    color: $facebook;
+  }
+  &.stack {
+    li a[href*="facebook.com"]::after {
+      color: $facebook;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="twitter.com"]::before {
+    color: $twitter;
+  }
+  &.stack {
+    li a[href*="twitter.com"]::after {
+      color: $twitter;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="dribbble.com"]::before {
+    color: $dribbble;
+  }
+  &.stack {
+    li a[href*="dribbble.com"]::after {
+      color: $dribbble;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="plus.google.com"]::before {
+    color: $googleplus;
+  }
+  &.stack {
+    li a[href*="plus.google.com"]::after {
+      color: $googleplus;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="pinterest.com"]::before {
+    color: $pinterest;
+  }
+  &.stack {
+    li a[href*="pinterest.com"]::after {
+      color: $pinterest;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="github.com"]::before {
+    color: $github;
+  }
+  &.stack {
+    li a[href*="github.com"]::after {
+      color: $github;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="tumblr.com"]::before {
+    color: $tumblr;
+  }
+  &.stack {
+    li a[href*="tumblr.com"]::after {
+      color: $tumblr;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="youtube.com"]::before {
+    color: $youtube;
+  }
+  &.stack {
+    li a[href*="youtube.com"]::after {
+      color: $youtube;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="flickr.com"]::before {
+    color: $flickr;
+  }
+  &.stack {
+    li a[href*="flickr.com"]::after {
+      color: $flickr;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="vimeo.com"]::before {
+    color: $vimeo;
+  }
+  &.stack {
+    li a[href*="vimeo.com"]::after {
+      color: $vimeo;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="instagram.com"]::before {
+    color: $instagram;
+  }
+  &.stack {
+    li a[href*="instagram.com"]::after {
+      color: $instagram;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="linkedin.com"]::before {
+    color: $instagram;
+  }
+  &.stack {
+    li a[href*="linkedin.com"]::after {
+      color: $instagram;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="codepen"]::before {
+    color: $facebook;
+  }
+  &.stack {
+    li a[href*="codepen"]::after {
+      color: $facebook;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="wordpress.org"]::before {
+    color: $wordpress;
+  }
+  &.stack {
+    li a[href*="wordpress.org"]::after {
+      color: $wordpress;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}
+
+.social-nav .brand {
+  li a[href*="feedburner.com"]::before {
+    color: $white;
+  }
+  &.stack {
+    li a[href*="feedburner.com"]::after {
+      color: $white;
+    }
+    li a::before {
+      color: $white;
+    }
+  }
+
+}

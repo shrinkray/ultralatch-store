@@ -1,0 +1,31 @@
+.content-info {
+  color: $black;
+  padding: $jumbotron-padding 0;
+
+  .footer-logo {
+    width: 150px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    a {
+      padding: .5em 0;
+      display: block;
+    }
+  }
+  .social-nav { // move up slightly to align with other headings
+    margin-top: -5px;
+  }
+}
+// Newsletter banner
+.cta-news {
+  border: 2px solid $gray-light;
+  border-left: 0;
+  border-right: 0;
+}
+.mt-35 {
+  margin-top: 1rem;
+}
+.lower-footer {
+
+}

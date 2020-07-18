@@ -1,0 +1,22 @@
+.sidebar {
+  // FONTS
+   h3 {
+     font-weight: 400;
+     font-size: 1.25rem;
+  }
+
+  .widget {
+    margin-bottom: $block;
+    padding: $block-padding;
+    background: $gray-lighter;
+    border-top: 1px solid $gray-light;
+    border-bottom: 1px solid $gray-light;
+  }
+}
+
+.sidebar {
+  ul {
+    list-style-type: square;
+    color: darken($brand-primary, 10%);
+  }
+}

@@ -1,0 +1,357 @@
+{
+    "key": "group_598348c653d34",
+    "title": "Footer Invitation Form",
+    "fields": [
+        {
+            "key": "field_598348ea03540",
+            "label": "Invitation",
+            "name": "invitation",
+            "type": "radio",
+            "instructions": "This is the original design. If you keep the layout, please review the fields. If unchecked, We will keep the patterned span, just no form part.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Keep the form and background",
+                "2": "Keep the background but remove the form",
+                "3": "Remove it all"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": 1,
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5983492203541",
+            "label": "Heading",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5983493603542",
+            "label": "Section Title",
+            "name": "section_title",
+            "type": "text",
+            "instructions": "An optional title for this section",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Join Our Newsletter",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5983498603543",
+            "label": "Welcome Message",
+            "name": "welcome_message",
+            "type": "textarea",
+            "instructions": "Twenty or fewer words should be enough to stir interest.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_598349b703544",
+            "label": "Form Elements",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_598349e103545",
+            "label": "Form Label",
+            "name": "form_label",
+            "type": "text",
+            "instructions": "This could be simple or write it as a hint, \"Your email address is requested.\"",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Email",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59834a0e03546",
+            "label": "Placeholder",
+            "name": "placeholder",
+            "type": "text",
+            "instructions": "Often this is an example email address or leave blank.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59834b0c0354c",
+            "label": "Email Help Message",
+            "name": "email_help_message",
+            "type": "text",
+            "instructions": "Give a reassurance about how their emails will be used. Leave it blank to skip.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "We'll never share your email with anyone else.",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59834a3503547",
+            "label": "Button",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59834a5c03548",
+            "label": "Button Name",
+            "name": "button_name",
+            "type": "text",
+            "instructions": "No one clicks on \"Submit,\" be specific or creative.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Join Now",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_59834ab60354a",
+            "label": "Patterns",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59834aca0354b",
+            "label": "Background Pattern",
+            "name": "background_pattern",
+            "type": "radio",
+            "instructions": "Select from the provided background art options to display in the background of your quotations box. I've taken the liberty to add a few I like. I can add others if you prefer.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_598348ea03540",
+                        "operator": "==",
+                        "value": "2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "60",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "seigaiha": "pattern of arcs",
+                "struckaxiom": "isometric geometric pattern",
+                "symphony": "swirls and gentle humor",
+                "subtle_zebra_3d": "gentle waves",
+                "scribble_light": "unpolished steel",
+                "transparent": "blank"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "symphony",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-general-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1505529998
+}

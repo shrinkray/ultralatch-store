@@ -1,0 +1,92 @@
+{
+    "key": "group_5d2253295ab96",
+    "title": "An alternate slider",
+    "fields": [
+        {
+            "key": "field_5d2253295f060",
+            "label": "Show Alternate Slider",
+            "name": "show_alt_slider",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5d2253904bcd4",
+            "label": "Place shortcode",
+            "name": "place_shortcode",
+            "type": "text",
+            "instructions": "Paste in shortcode from slider plugin. Please be sure to include the square brackets.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5d2253295f060",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "75",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-home.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-secondary.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "Deploy shortcode for a new slider kit.",
+    "modified": 1562531009
+}

@@ -1,0 +1,574 @@
+{
+    "key": "group_5a94a3a6eabf1",
+    "title": "Product Overviews",
+    "fields": [
+        {
+            "key": "field_5aa5d23c032c7",
+            "label": "Add the video URL below",
+            "name": "add_a_video",
+            "type": "oembed",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": 640,
+            "height": ""
+        },
+        {
+            "key": "field_5d2325a4f0e70",
+            "label": "Content Guide",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<svg width=\"612px\" height=\"199px\" viewBox=\"0 0 612 199\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\r\n    <!-- Generator: Sketch 50.2 (55047) - http:\/\/www.bohemiancoding.com\/sketch -->\r\n    <title>Overview2<\/title>\r\n    <desc>Created with Sketch.<\/desc>\r\n    <defs>\r\n        <path d=\"M0,0 L185,0 L185,69 L0,69 L0,0 Z\" id=\"path-1\"><\/path>\r\n        <mask id=\"mask-2\" maskContentUnits=\"userSpaceOnUse\" maskUnits=\"objectBoundingBox\" x=\"0\" y=\"0\" width=\"185\" height=\"69\" fill=\"white\">\r\n            <use xlink:href=\"#path-1\"><\/use>\r\n        <\/mask>\r\n        <path d=\"M0.43626081,0.288007749 L42.5365711,0.288007749 L42.5365711,98.0226374 L0.43626081,98.0226374 L0.43626081,0.288007749 Z\" id=\"path-3\"><\/path>\r\n        <mask id=\"mask-4\" maskContentUnits=\"userSpaceOnUse\" maskUnits=\"objectBoundingBox\" x=\"0\" y=\"0\" width=\"42.1003102\" height=\"97.7346296\" fill=\"white\">\r\n            <use xlink:href=\"#path-3\"><\/use>\r\n        <\/mask>\r\n        <path d=\"M0,0 L185,0 L185,69 L0,69 L0,0 Z\" id=\"path-5\"><\/path>\r\n        <mask id=\"mask-6\" maskContentUnits=\"userSpaceOnUse\" maskUnits=\"objectBoundingBox\" x=\"0\" y=\"0\" width=\"185\" height=\"69\" fill=\"white\">\r\n            <use xlink:href=\"#path-5\"><\/use>\r\n        <\/mask>\r\n        <path d=\"M2,0.78162103 L44.8799456,0.78162103 L44.8799456,96.9378082 L2,96.9378082 L2,0.78162103 Z\" id=\"path-7\"><\/path>\r\n        <mask id=\"mask-8\" maskContentUnits=\"userSpaceOnUse\" maskUnits=\"objectBoundingBox\" x=\"0\" y=\"0\" width=\"42.8799456\" height=\"96.1561871\" fill=\"white\">\r\n            <use xlink:href=\"#path-7\"><\/use>\r\n        <\/mask>\r\n    <\/defs>\r\n    <g id=\"ACF-Message\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\r\n        <g id=\"Overview2\" transform=\"translate(0.000000, -0.718750)\">\r\n            <g id=\"Left_Image\" transform=\"translate(0.000000, 108.730469)\">\r\n                <use id=\"row2\" stroke=\"#979797\" mask=\"url(#mask-2)\" stroke-width=\"2\" fill=\"#FFFFFF\" stroke-dasharray=\"2\" xlink:href=\"#path-1\"><\/use>\r\n                <g id=\"inner_row\" transform=\"translate(33.000000, 9.000000)\">\r\n                    <g id=\"image\">\r\n                        <rect id=\"imageL\" stroke=\"#000000\" fill=\"#4A90E2\" x=\"0.85546875\" y=\"0.5\" width=\"52.6445312\" height=\"49\"><\/rect>\r\n                        <path d=\"M52.5,1.76953125 L2.5,47.7695312\" id=\"line2\" stroke=\"#FFFFFF\" stroke-linecap=\"square\"><\/path>\r\n                    <\/g>\r\n                    <rect id=\"textR\" stroke=\"#979797\" fill=\"#D8D8D8\" x=\"63.5\" y=\"0.5\" width=\"66.8613281\" height=\"49\"><\/rect>\r\n                    <text id=\"text\" font-family=\"OpenSans, Open Sans\" font-size=\"9\" font-weight=\"normal\" letter-spacing=\"0.219999999\" fill=\"#000000\">\r\n                        <tspan x=\"65.9394531\" y=\"12.2089844\">Text<\/tspan>\r\n                    <\/text>\r\n                    <text id=\"left\" font-family=\"OpenSans, Open Sans\" font-size=\"9\" font-weight=\"normal\" letter-spacing=\"0.219999999\" fill=\"#FFFFFF\">\r\n                        <tspan x=\"3.7578125\" y=\"12.2089844\">Left<\/tspan>\r\n                    <\/text>\r\n                <\/g>\r\n            <\/g>\r\n            <g id=\"Left_Image-Copy\" transform=\"translate(229.814111, 101.363277)\">\r\n                <use id=\"row2\" stroke=\"#979797\" mask=\"url(#mask-4)\" stroke-width=\"2\" fill=\"#FFFFFF\" stroke-dasharray=\"2\" xlink:href=\"#path-3\"><\/use>\r\n                <g id=\"inner_row\" transform=\"translate(0.436261, 4.792129)\">\r\n                    <g id=\"image\">\r\n                        <rect id=\"imageL\" stroke=\"#000000\" fill=\"#4A90E2\" x=\"0.777136012\" y=\"0.5\" width=\"40.8231742\" height=\"39.9611021\"><\/rect>\r\n                        <path d=\"M40.9308572,1.449639 L1.94908844,39.1338529\" id=\"line2\" stroke=\"#FFFFFF\" stroke-linecap=\"square\"><\/path>\r\n                    <\/g>\r\n                    <rect id=\"textR\" stroke=\"#979797\" fill=\"#D8D8D8\" x=\"0.5\" y=\"47.9228759\" width=\"41.1003102\" height=\"39.9611021\"><\/rect>\r\n                <\/g>\r\n            <\/g>\r\n            <g id=\"Right_Image\" transform=\"translate(0.000000, 32.617188)\">\r\n                <use id=\"row1\" stroke=\"#979797\" mask=\"url(#mask-6)\" stroke-width=\"2\" fill=\"#FFFFFF\" stroke-dasharray=\"2\" xlink:href=\"#path-5\"><\/use>\r\n                <g id=\"inner_row\" transform=\"translate(86.000000, 33.000000) scale(-1, 1) translate(-86.000000, -33.000000) translate(21.000000, 8.000000)\">\r\n                    <g id=\"image\" transform=\"translate(0.645508, 0.000000)\">\r\n                        <rect id=\"imageR\" stroke=\"#000000\" fill=\"#4A90E2\" transform=\"translate(27.177734, 25.000000) scale(-1, 1) translate(-27.177734, -25.000000) \" x=\"0.85546875\" y=\"0.5\" width=\"52.6445312\" height=\"49\"><\/rect>\r\n                        <path d=\"M51.1455078,1.8828125 L1.14550781,47.8828125\" id=\"line2\" stroke=\"#FFFFFF\" stroke-linecap=\"square\" transform=\"translate(26.500000, 24.500000) scale(-1, 1) translate(-26.500000, -24.500000) \"><\/path>\r\n                    <\/g>\r\n                    <rect id=\"textL\" stroke=\"#979797\" fill=\"#D8D8D8\" transform=\"translate(96.168945, 25.000000) scale(-1, 1) translate(-96.168945, -25.000000) \" x=\"63.6796875\" y=\"0.5\" width=\"64.9785156\" height=\"49\"><\/rect>\r\n                    <text id=\"Text\" transform=\"translate(112.625488, 8.822266) scale(-1, 1) translate(-112.625488, -8.822266) \" font-family=\"OpenSans, Open Sans\" font-size=\"9\" font-weight=\"normal\" letter-spacing=\"0.219999999\" fill=\"#000000\">\r\n                        <tspan x=\"102.250977\" y=\"12.3222656\">Text<\/tspan>\r\n                    <\/text>\r\n                    <text id=\"Right\" transform=\"translate(38.967773, 8.822266) scale(-1, 1) translate(-38.967773, -8.822266) \" font-family=\"OpenSans, Open Sans\" font-size=\"9\" font-weight=\"normal\" letter-spacing=\"0.219999999\" fill=\"#FFFFFF\">\r\n                        <tspan x=\"27.3466797\" y=\"12.3222656\">Right<\/tspan>\r\n                    <\/text>\r\n                <\/g>\r\n            <\/g>\r\n            <g id=\"Right_Image-Copy\" transform=\"translate(228.029576, 0.826172)\">\r\n                <use id=\"row1\" stroke=\"#979797\" mask=\"url(#mask-8)\" stroke-width=\"2\" fill=\"#FFFFFF\" stroke-dasharray=\"2\" xlink:href=\"#path-7\"><\/use>\r\n                <g id=\"inner_row\" transform=\"translate(22.879946, 48.415332) scale(-1, 1) translate(-22.879946, -48.415332) translate(0.879946, 4.915332)\">\r\n                    <g id=\"image\" transform=\"translate(0.123341, 0.684018)\">\r\n                        <rect id=\"imageR\" stroke=\"#000000\" fill=\"#4A90E2\" transform=\"translate(21.188723, 20.480551) scale(-1, 1) translate(-21.188723, -20.480551) \" x=\"0.777136012\" y=\"0.5\" width=\"40.8231742\" height=\"39.9611021\"><\/rect>\r\n                        <path d=\"M39.8748472,1.5424415 L0.893078413,39.2266554\" id=\"line2\" stroke=\"#FFFFFF\" stroke-linecap=\"square\" transform=\"translate(20.660337, 20.070940) scale(-1, 1) translate(-20.660337, -20.070940) \"><\/path>\r\n                    <\/g>\r\n                    <rect id=\"textL\" stroke=\"#979797\" fill=\"#D8D8D8\" transform=\"translate(21.173496, 66.356985) scale(-1, 1) translate(-21.173496, -66.356985) \" x=\"0.623340753\" y=\"46.3764343\" width=\"41.1003102\" height=\"39.9611021\"><\/rect>\r\n                <\/g>\r\n            <\/g>\r\n            <text id=\"In-this-layout-the-i\" font-family=\"OpenSans, Open Sans\" font-size=\"13\" font-weight=\"normal\" letter-spacing=\"0.219999999\" fill=\"#000000\">\r\n                <tspan x=\"303.226562\" y=\"63.3261719\">In this layout the image appears above the text in <\/tspan>\r\n                <tspan x=\"303.226562\" y=\"81.3261719\">mobile but on desktop is oriented as shown. <\/tspan>\r\n                <tspan x=\"303.226562\" y=\"99.3261719\">The layout is intended to add interest by <\/tspan>\r\n                <tspan x=\"303.226562\" y=\"117.326172\">offsetting the image half of the row while <\/tspan>\r\n                <tspan x=\"303.226562\" y=\"135.326172\">following page width guidelines. <\/tspan>\r\n            <\/text>\r\n        <\/g>\r\n    <\/g>\r\n<\/svg>",
+            "new_lines": "",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5aa5d340a10f5",
+            "label": "Flexible Content Layout",
+            "name": "flexible_layout",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5aa5d3594c04e": {
+                    "key": "5aa5d3594c04e",
+                    "name": "image_with_content",
+                    "label": "Row of image with content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cd9b7a15fe6f",
+                            "label": "Image Crop Options",
+                            "name": "image_crop",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "square": "Square 300 x 300",
+                                "landscape": "Landscape 450 x 300",
+                                "portrait": "Portrait 300 x 380"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_5aa6dd9039528",
+                            "label": "Select the option which matches the desired layout of this row.",
+                            "name": "image_placement",
+                            "type": "radio",
+                            "instructions": "Choose the combination of options needed for this row. Section titles are optional.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "60",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "A. Image on left",
+                                "right": "B. Image on right"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_5aa6607d57bf8",
+                            "label": "Add Image",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5d2321246ca7f",
+                            "label": "Add square image",
+                            "name": "add_square",
+                            "type": "image_aspect_ratio_crop",
+                            "instructions": "Cropping is recommended for web performance. \r\nSquare: 300 x 300",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5cd9b7a15fe6f",
+                                        "operator": "==",
+                                        "value": "square"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "aspect_ratio_width": 300,
+                            "aspect_ratio_height": 300,
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": 300,
+                            "min_height": 300,
+                            "min_size": "",
+                            "max_width": 2000,
+                            "max_height": 2000,
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5cd9b7245fe6e",
+                            "label": "Add landscape image",
+                            "name": "add_landscape",
+                            "type": "image_aspect_ratio_crop",
+                            "instructions": "Cropping is recommended for web performance. \r\nLandscape: 450 x 300",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5cd9b7a15fe6f",
+                                        "operator": "==",
+                                        "value": "landscape"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "aspect_ratio_width": 450,
+                            "aspect_ratio_height": 300,
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": 450,
+                            "min_height": 300,
+                            "min_size": "",
+                            "max_width": 2000,
+                            "max_height": 2000,
+                            "max_size": 50,
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5d2373b5d89ef",
+                            "label": "Add portrait",
+                            "name": "add_portrait",
+                            "type": "image_aspect_ratio_crop",
+                            "instructions": "Cropping is recommended for web performance. \r\nLandscape: 300 x 380",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5cd9b7a15fe6f",
+                                        "operator": "==",
+                                        "value": "portrait"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "aspect_ratio_width": 300,
+                            "aspect_ratio_height": 380,
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": 300,
+                            "min_height": 380,
+                            "min_size": "",
+                            "max_width": 2000,
+                            "max_height": 2000,
+                            "max_size": 50,
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5aa6dbfc6b3e0",
+                            "label": "Text content",
+                            "name": "mix_content",
+                            "type": "flexible_content",
+                            "instructions": "This is a flexible field, so feel free to mix buttons with text.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "60",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layouts": {
+                                "5aa6dc0510c76": {
+                                    "key": "5aa6dc0510c76",
+                                    "name": "add_text",
+                                    "label": "Add Text",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5d237605d289c",
+                                            "label": "",
+                                            "name": "",
+                                            "type": "message",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_5aa6dd9039528",
+                                                        "operator": "==",
+                                                        "value": "left"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "message": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<svg width=\"185px\" height=\"70px\" viewBox=\"0 0 185 70\" >\r\n\r\n        <path d=\"M0,0 L185,0 L185,69 L0,69 L0,0 Z\" id=\"path-1\"><\/path>\r\n        <mask id=\"mask-2\" maskContentUnits=\"userSpaceOnUse\" maskUnits=\"objectBoundingBox\" x=\"0\" y=\"0\" width=\"185\" height=\"69\" fill=\"white\">\r\n            <use xlink:href=\"#path-1\"><\/use>\r\n        <\/mask>\r\n    <\/defs>\r\n    <g id=\"ACF-Message\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\r\n        <g id=\"Overview2\" transform=\"translate(0.000000, -108.718750)\">\r\n            <g id=\"Left_Image\" transform=\"translate(0.000000, 108.730469)\">\r\n                <use id=\"row2\" stroke=\"#979797\" mask=\"url(#mask-2)\" stroke-width=\"2\" fill=\"#FFFFFF\" stroke-dasharray=\"2\" xlink:href=\"#path-1\"><\/use>\r\n                <g id=\"inner_row\" transform=\"translate(33.000000, 9.000000)\">\r\n                    <g id=\"image\">\r\n                        <rect id=\"imageL\" stroke=\"#000000\" fill=\"#4A90E2\" x=\"0.85546875\" y=\"0.5\" width=\"52.6445312\" height=\"49\"><\/rect>\r\n                        <path d=\"M52.5,1.76953125 L2.5,47.7695312\" id=\"line2\" stroke=\"#FFFFFF\" stroke-linecap=\"square\"><\/path>\r\n                    <\/g>\r\n                    <rect id=\"textR\" stroke=\"#979797\" fill=\"#D8D8D8\" x=\"63.5\" y=\"0.5\" width=\"66.8613281\" height=\"49\"><\/rect>\r\n                    \r\n                <\/g>\r\n            <\/g>\r\n        <\/g>\r\n    <\/g>\r\n<\/svg>",
+                                            "new_lines": "",
+                                            "esc_html": 0
+                                        },
+                                        {
+                                            "key": "field_5d237657d289d",
+                                            "label": "",
+                                            "name": "",
+                                            "type": "message",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": [
+                                                [
+                                                    {
+                                                        "field": "field_5aa6dd9039528",
+                                                        "operator": "==",
+                                                        "value": "right"
+                                                    }
+                                                ]
+                                            ],
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "message": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<svg width=\"185px\" height=\"70px\" viewBox=\"0 0 185 70\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\r\n    \r\n    <defs>\r\n        <path d=\"M0,0 L185,0 L185,69 L0,69 L0,0 Z\" id=\"path-1\"><\/path>\r\n        <mask id=\"mask-2\" maskContentUnits=\"userSpaceOnUse\" maskUnits=\"objectBoundingBox\" x=\"0\" y=\"0\" width=\"185\" height=\"69\" fill=\"white\">\r\n            <use xlink:href=\"#path-1\"><\/use>\r\n        <\/mask>\r\n    <\/defs>\r\n    <g id=\"ACF-Message\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">\r\n        <g id=\"Right_Image\" transform=\"translate(0.000000, 0.617188)\">\r\n            <use id=\"row1\" stroke=\"#979797\" mask=\"url(#mask-2)\" stroke-width=\"2\" fill=\"#FFFFFF\" stroke-dasharray=\"2\" xlink:href=\"#path-1\"><\/use>\r\n            <g id=\"inner_row\" transform=\"translate(86.000000, 33.000000) scale(-1, 1) translate(-86.000000, -33.000000) translate(21.000000, 8.000000)\">\r\n                <g id=\"image\" transform=\"translate(0.645508, 0.000000)\">\r\n                    <rect id=\"imageR\" stroke=\"#000000\" fill=\"#4A90E2\" transform=\"translate(27.177734, 25.000000) scale(-1, 1) translate(-27.177734, -25.000000) \" x=\"0.85546875\" y=\"0.5\" width=\"52.6445312\" height=\"49\"><\/rect>\r\n                    <path d=\"M51.1455078,1.8828125 L1.14550781,47.8828125\" id=\"line2\" stroke=\"#FFFFFF\" stroke-linecap=\"square\" transform=\"translate(26.500000, 24.500000) scale(-1, 1) translate(-26.500000, -24.500000) \"><\/path>\r\n                <\/g>\r\n                <rect id=\"textL\" stroke=\"#979797\" fill=\"#D8D8D8\" transform=\"translate(96.168945, 25.000000) scale(-1, 1) translate(-96.168945, -25.000000) \" x=\"63.6796875\" y=\"0.5\" width=\"64.9785156\" height=\"49\"><\/rect>\r\n                \r\n            <\/g>\r\n        <\/g>\r\n    <\/g>\r\n<\/svg>",
+                                            "new_lines": "",
+                                            "esc_html": 0
+                                        },
+                                        {
+                                            "key": "field_5aa98147c9250",
+                                            "label": "Text & Button Parts",
+                                            "name": "",
+                                            "type": "tab",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "placement": "top",
+                                            "endpoint": 0
+                                        },
+                                        {
+                                            "key": "field_5aa5d683a10f9",
+                                            "label": "Add text content",
+                                            "name": "add_text_content",
+                                            "type": "textarea",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "60",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "maxlength": "",
+                                            "rows": "",
+                                            "new_lines": "wpautop"
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                },
+                                "5aa6dc426b3e1": {
+                                    "key": "5aa6dc426b3e1",
+                                    "name": "build_a_button",
+                                    "label": "Build a button or button group",
+                                    "display": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5aa5d708a10fa",
+                                            "label": "Add a button",
+                                            "name": "add_button",
+                                            "type": "repeater",
+                                            "instructions": "This will appear on the same side as text content. Build out your content. Each thing you create can be reordered.",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "collapsed": "",
+                                            "min": 0,
+                                            "max": 0,
+                                            "layout": "block",
+                                            "button_label": "+ Add A Button",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5aa6ef93e9623",
+                                                    "label": "Expand button",
+                                                    "name": "",
+                                                    "type": "accordion",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "open": 1,
+                                                    "multi_expand": 1,
+                                                    "endpoint": 0
+                                                },
+                                                {
+                                                    "key": "field_5aa5d926a10fd",
+                                                    "label": "Internal link?",
+                                                    "name": "internal_link",
+                                                    "type": "true_false",
+                                                    "instructions": "Checked, this is created to make it possible for you to link to an internal page. Unchecked, please use an off-site link.",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "message": "This is an internal link.",
+                                                    "default_value": 1,
+                                                    "ui": 0,
+                                                    "ui_on_text": "",
+                                                    "ui_off_text": ""
+                                                },
+                                                {
+                                                    "key": "field_5aa5d808a10fc",
+                                                    "label": "Button Link",
+                                                    "name": "button_link",
+                                                    "type": "url",
+                                                    "instructions": "Give the full URL as the link. When clicked the page will open on a new tab.",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_5aa5d926a10fd",
+                                                                "operator": "!=",
+                                                                "value": "1"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "45",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "https:\/\/..."
+                                                },
+                                                {
+                                                    "key": "field_5aa6625406747",
+                                                    "label": "Button Link",
+                                                    "name": "button_link_internal",
+                                                    "type": "page_link",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": [
+                                                        [
+                                                            {
+                                                                "field": "field_5aa5d926a10fd",
+                                                                "operator": "==",
+                                                                "value": "1"
+                                                            }
+                                                        ]
+                                                    ],
+                                                    "wrapper": {
+                                                        "width": "45",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "post_type": [
+                                                        "post",
+                                                        "page"
+                                                    ],
+                                                    "taxonomy": "",
+                                                    "allow_null": 0,
+                                                    "allow_archives": 1,
+                                                    "multiple": 0
+                                                },
+                                                {
+                                                    "key": "field_5aa5d7ada10fb",
+                                                    "label": "Label on the button",
+                                                    "name": "button_label",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5d236c7fff672",
+                                                    "label": "Button Title",
+                                                    "name": "button_title",
+                                                    "type": "textarea",
+                                                    "instructions": "For accessibility, please give the button a description. This is not the same as the label, and this text will appear when hovering on the button.",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "Learn more about this exciting feature ...",
+                                                    "maxlength": "",
+                                                    "rows": 4,
+                                                    "new_lines": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "min": "",
+                                    "max": ""
+                                }
+                            },
+                            "button_label": "+ Add Text or Button Combo",
+                            "min": "",
+                            "max": ""
+                        },
+                        {
+                            "key": "field_5aa6d1ae06748",
+                            "label": "Give this section a title (optional)",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5aa5d415a10f6",
+                            "label": "Section Heading",
+                            "name": "section_heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "h2",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "+ Add a Custom Content Row",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-overview.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "Any product overview landing page",
+    "modified": 1562613448
+}

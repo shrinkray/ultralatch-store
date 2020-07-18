@@ -1,0 +1,137 @@
+
+.jumbotron {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+  overflow: hidden;
+  .bg-video-wrap {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    // center in IE 11
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 432px;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba($black, .5);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .bg-video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  video {
+    max-width: unset;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .jumbotron-inner {
+    position: relative;
+    z-index: 3;
+  }
+}
+// moved in from pages.scss
+.jumbotron {
+  padding: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-radius: 0;
+  max-height: 400px;
+  .container {
+    //padding: 0 !important;
+  }
+  .slider, .slick-track {
+    max-height: 400px;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-bottom: 3px solid $gray-light;
+  }
+
+  hr {
+    border-top: 2px solid white;
+  }
+  .lead {
+    margin-bottom: 0;
+  }
+}
+.carousel-caption {
+  // top: 4rem; // using self-centering with flexbox
+  // overriding from slick settings
+  bottom: inherit;
+
+}
+
+
+@include media-breakpoint-up(md) {
+  //img[src$=".svg"], interferes with new corp logo in header
+  .slider-logo {
+    width: 400px;
+
+  }
+}
+
+
+
+//@media ( minx-width: 992px )
+@include media-breakpoint-down(lg) {
+  .carousel-caption {
+    right: 15%;
+    left: 15%;
+    //bottom: 0;
+    bottom: inherit;
+    top: initial;
+  }
+  .img-fluid {
+    max-width: initial;
+  }
+  .slider-logo {
+    max-width: 55%;
+  }
+}
+//@media ( min-width: 700px ){
+@include media-breakpoint-down(md) {
+  .carousel-16 {
+    right: 15%;
+    left: 15%;
+    //bottom: -40px;
+    bottom: inherit;
+    top: initial;
+    h2 {
+      font-size: 1.2rem;
+    }
+    hr {
+      margin-top: 0.3rem;
+    }
+  }
+  h1 {
+    font-size: 1.8rem;
+
+  }
+  .jumbotron {
+    .slider, .slick-track {
+      overflow: hidden;
+    }
+    overflow: hidden;
+    .img-fluid {
+      min-height: 300px;
+    }
+  }
+  .slick-list {
+    overflow: visible;
+  }
+}
+
+

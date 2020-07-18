@@ -1,0 +1,352 @@
+
+
+// FONTS
+h1 {
+  font-weight: 500;
+  font-family: Montserrat, "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+h2, h3 {
+  font-weight: 400;
+  font-family: Montserrat, "Open Sans", "Helvetica Neue", Arial, sans-serif;
+}
+.card-title {
+  font-size: 1.7rem;
+}
+
+// JUMBOTRON
+// moved to jumbotrons.scss
+
+.home {
+  .main {
+    margin-top: 4rem;
+  }
+}
+// This sets the diagonal; the best way was with a solid color rather than a pattern.
+// Problem was in the border pattern.
+// This has a JavaScript callout in main.js
+
+.cta-diagonal {
+  background-size: cover;
+}
+.cta-list {
+  background-color: rgb(236, 238, 239);
+
+  border-top: 1px solid #BCB8B4;
+  border-bottom: 1px solid #BCB8B4;
+  margin-bottom: $block;
+
+  .fa {
+    margin-right: .5rem;
+  }
+}
+.d-flex .fa-check {
+  font-size: 2rem;
+}
+h4.light {
+  font-weight: 300 !important;
+}
+
+
+.divider-diagonal-l { // CTA RIGHT
+   overflow: hidden;
+  background-color: $gray;
+  &:after {
+    border-right-color: rgb(236, 238, 239);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-width: 100px;
+    border-right-style: solid;
+    border-top: 600px solid rgba(0, 0, 0, 0);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    z-index: 1;
+  }
+ }
+.divider-diagonal-r { // CTA LEFT
+  overflow: hidden;
+  background-color: $gray;
+  &:before {
+    border-left-color: rgb(236, 238, 239);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-left-width: 100px;
+    border-left-style: solid;
+    border-bottom: 600px solid rgba(0, 0, 0, 0);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    z-index: 1;
+  }
+}
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .holder {
+    border: 0.1rem solid grey;
+  }
+}
+.main {
+  margin-bottom: 4rem;
+}
+//@media ( max-width: 991px )
+@include media-breakpoint-down(md) {
+
+  .divider-diagonal {
+    overflow: hidden;
+  }
+  .divider-diagonal-r,
+  .divider-diagonal-l {
+    height: 100%;
+    position: absolute;
+    opacity: 0.08;
+    &:after, &:before {
+      border-width: 0;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 991px ) {
+  .main {
+    margin-top: 1.5rem;
+  }
+}
+
+// All Pages & Secondary Template Mods
+
+a {
+  &:hover, &:focus {
+    text-decoration: none;
+    color: darken($brand-primary, 10%);
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+  }
+}
+
+.block {
+  margin-bottom: $block;
+}
+.half-block {
+  margin-bottom: ($block / 2);
+}
+.block-title {
+  margin: 0 0 2rem 0;
+}
+.cta-block {
+  //border-top: 1px solid $gray-light;
+  //border-bottom: 1px solid $gray-light;
+  background: $gray-lighter;
+  padding-bottom: 1rem;
+}
+.card {
+  border: 0;
+  .image-block {
+    position: relative;
+    background-color: $brand-primary;
+
+    a {
+      display: inline-block;
+    }
+    img {
+      opacity: 1;
+      display: inline-block;
+      &:hover {
+        transition: opacity .25s ease-in-out;
+        opacity: 0.2;
+      }
+    }
+  }
+  .over-image {
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+    color: $white;
+    font-weight: 700;
+    padding-right: 10px;
+
+  }
+}
+
+// max-height used with checkScrollHeightOverflow() in main.js
+article {
+  .card-title {
+    max-height: 2.2em;
+  }
+}
+.card-block {
+  padding-left: 0;
+  padding-right: 0;
+  // max-height: 4em; // needed for checkScrollHeightOverflow()
+  // it's not doing what we need it to right now.
+  //border-bottom: 1px solid $gray-light;
+  //border-top: 3px solid $gray-lighter;
+
+
+  .cat { // set this margin if appearing stacked meta
+    margin-bottom: 1.2rem;
+  }
+}
+
+.card-title {
+  font-size: 1.4rem;
+  line-height: 1.1em;
+  max-height: 2.2em;
+  overflow: hidden;
+}
+// adds Font Awesome icon to Blog post meta
+.flex-meta {
+  text-transform: uppercase;
+  font-size: .7rem;
+  color: $gray;
+  time {
+    &::before {
+      font-family: "FontAwesome";
+      content: "\f017"; // clock
+      text-transform: lowercase;
+      color: $gray-light;
+      margin-right: .5em;
+      font-size: .8rem;
+    }
+  }
+  .byline {
+    margin-bottom: 0;
+    .fn {
+      font-size: 0.7rem;
+      color: $gray;
+      &:hover {
+        color: darken($gray, 20%);
+      }
+    }
+  }
+}
+.card-stack {
+
+  .cat {
+    margin: 0;
+  }
+}
+.sticky {
+  padding: 1rem;
+  background: $gray-lightest;
+}
+.cat {
+  // see .card-block for .cat : margin-bottom: 1.2rem;
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f0c1"; // link
+    color: $gray-light;
+    margin-right: .4em;
+    font-size: .7rem;
+  }
+}
+.fa-tag { // tag
+  text-transform: lowercase;
+  color: $gray-light;
+  margin-right: 0.2rem;
+  font-size: 0.8rem;
+}
+.post-btn {
+  text-transform: uppercase;
+  font-size: .8rem;
+  &:hover {
+    text-decoration: none;
+  }
+  &:after {
+    font-family: "FontAwesome";
+    content: "\f105"; // angle-right
+    text-transform: lowercase;
+    color: lighten($brand-primary, 30%);
+    margin-left: .5em;
+    font-size: .8rem;
+  }
+}
+
+// MEDIA & BREAK BOX
+.rounded {
+  border-radius: $border-radius-sm;
+}
+
+.break-block {
+  padding: 40px;
+  //border-top: 1px solid $gray-light;
+  //border-bottom: 1px solid $gray-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+  &:before {
+    content: '\f10d';
+    font-family: "FontAwesome";
+    font-size: 4rem;
+    align-self: flex-start;
+    color: rgba($gray-light, 0.5);
+    line-height: 0;
+  }
+  &:after {
+    content: '\f10e';
+    font-family: "FontAwesome";
+    align-self: flex-end;
+    font-size: 4rem;
+    color: rgba($gray-light, 0.5);
+    line-height: 0;
+  }
+  blockquote {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    width: 100%;
+  }
+  .credit {
+    align-self: flex-end;
+    margin-right: 4rem;
+  }
+}
+
+.standard-block{
+  .block {
+    img {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+
+// A standard return to top customization
+.go-top {
+  margin: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: rgba($brand-primary, 0.3);
+  display: none;
+  z-index: 10000;
+  &:hover {
+    color: rgba($brand-primary, 0.9);
+  }
+  .fixed-btn {
+    font-size: 60px;
+    padding: 0 10px;
+  }
+}
+
+

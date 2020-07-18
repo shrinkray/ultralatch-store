@@ -1,0 +1,209 @@
+
+
+.woocommerce { // TODO: find alternate namespace for theme styles on buttons
+
+
+  p {
+    text-align: left;
+  }
+
+
+  .variations {
+     label {
+       font-weight: 300 !important; // override woocommerce
+     }
+  }
+  .variation-tooltip {
+    color: $brand-primary !important;
+    &:hover {
+      color: darken($brand-primary, 20%) !important;
+    }
+  }
+// TODO: 👆 Known bug for position on screens where 'order several items' text wraps. Find JS way to hook into variations form | GRM 1-23-2019
+
+
+  // Fix account layout bug due to Bootstrap 4
+
+  .col-1,
+  .col-2 {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .col2-set {
+      width: 52.9411764706%;
+      float: left;
+      margin-right: 5.8823529412%;
+    }
+    #order_review_heading {
+      margin-bottom: 0;
+      padding-bottom: 0.6180469716em;
+    }
+    #order_review_heading, #order_review {
+      width: 41.1764705882%;
+      float: right;
+      margin-right: 0;
+      clear: right;
+    }
+  }
+
+
+  table {
+    &.shop_attributes {
+      td {
+        padding: 8px;
+      }
+    }
+  }
+  .attract {
+    background-color: $gray-lightest;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  button, input {
+    &.button {
+      &.alt {
+        background-color: $brand-primary;
+        border-radius: 0;
+        &:hover {
+          background-color: darken($brand-primary, 5%);
+          transition: color 0s, background-color 0.5s;
+        }
+        &.disabled {
+          background-color: rgba($brand-primary, 0.5);
+          &:hover {
+            background-color: darken(rgba($brand-primary, 0.5), 5%);
+          }
+        }
+      }
+    }
+  }
+  .button {
+    &.large-order-button {
+      background-color: white;
+      border: 1px solid $brand-primary;
+      &:hover {
+        background-color: $brand-primary;
+        color: $white;
+        transition: color 0s, background-color 0.5s;
+      }
+    }
+  }
+  div.product {
+    p.price { // Starting from ...
+      color: darken($brand-info, 10%);
+    }
+    span.price {
+      color: darken($brand-info, 10%);
+    }
+    .summary {
+      position: relative;
+    }
+  }
+  .sku_wrapper {
+    color: darken($brand-info, 10%);
+  }
+  .woocommerce-message {
+    border-top-color: darken($brand-info, 10%);
+    &:before {
+      color: darken($brand-info, 10%);
+    }
+  }
+  ul.products li.product .price {
+    color: darken($brand-info, 10%);
+  }
+  input {
+    &.button { // apply coupon button
+      border-radius: 0;
+      width: 204px;
+    }
+  }
+  a.button {
+    border-radius: 0;
+    background-color: white;
+    border: 1px solid $brand-primary;
+    &:hover {
+      background-color: $brand-primary;
+      color: $white;
+      transition: color 0s, background-color 0.5s;
+    }
+    &.alt { // proceed to checkout button
+      background-color: $brand-primary;
+      border-radius: 0;
+      &:hover {
+        background-color: darken($brand-primary, 5%);
+        transition: color 0s, background-color 0.5s;
+      }
+    }
+  }
+  #respond input#submit,
+  .woocommerce a.button,
+  .woocommerce button.button,
+  .woocommerce input.button {
+    border-radius: 0;
+  }
+
+
+  // Stripe checkout button
+  .wc-stripe-checkout-button {
+    background: $brand-primary;
+    color: white;
+    &:hover {
+      background-color: darken($brand-primary, 5%);
+      transition: color 0s, background-color 0.5s;
+      cursor: pointer;
+    }
+  }
+} // WOOCOMMERCE
+input#coupon_code { // width of field
+  //width: 166px;
+}
+.woocommerce-cart table.cart img { // larger thumbnail image in cart
+  width: 150px;
+}
+// Checkout
+
+// This addresses image size of SVG creditcards showing in Stripe
+.payment_methods {
+  li {
+    img[src$=".svg"] {
+      width: 40px;
+    }
+  }
+}
+.stripe-card-group {
+  min-width: 265px;
+}
+.wc-stripe-elements-field  {
+  min-width: 131px;
+}
+
+// Addresses position of inline checkbox in checkout
+.woocommerce {
+  h3 {
+    input[type=checkbox] {
+      position: relative;
+      top: -5px;
+    }
+  }
+  .form-row {
+    flex-direction: column;
+    .required {
+      text-decoration: none;
+    }
+  }
+}
+
+// Category Swatch Manager Plugin
+
+.swatch-wrapper {
+  padding: 1px;
+  &:hover {
+    border-color: $brand-primary;
+  }
+  &.selected {
+    border: 1px solid darken($brand-primary, 10%) !important;
+  }
+}

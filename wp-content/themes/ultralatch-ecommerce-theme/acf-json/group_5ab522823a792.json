@@ -1,0 +1,800 @@
+{
+    "key": "group_5ab522823a792",
+    "title": "Product Tabs",
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "format"
+    ],
+    "active": 1,
+    "description": "Provides the content for each tab on a product page",
+    "modified": 1548782856,
+    "fields": [
+        {
+            "key": "field_5ab6c17526c88",
+            "label": "Which tabs are included with this product?",
+            "name": "which_tabs",
+            "type": "checkbox",
+            "instructions": "Check which tabs to include with this product. While the overview tab  can be unchecked, it will not be removed by design.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "hello",
+                "id": ""
+            },
+            "choices": {
+                "overview": "Overview (text)",
+                "dimensions": "Dimensions (text & images)",
+                "drawings": "Drawings (file upload)",
+                "documents": "Documents (file upload)",
+                "specs": "Architectural Specifications (text)",
+                "video": "Video (URL)"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [
+                "overview"
+            ],
+            "layout": "horizontal",
+            "toggle": 1,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5ab5229db62f3",
+            "label": "Overview Tab",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This tab contains the contents of the Description field (above).",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5ab587d341584",
+            "label": "Dimensions Tab",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ab6c17526c88",
+                        "operator": "==",
+                        "value": "dimensions"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5abbe85539a0b",
+            "label": "Opening description",
+            "name": "dims_caption",
+            "type": "textarea",
+            "instructions": "This will appear below the Dimensions tab.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5ab5b11bb7603",
+            "label": "Dimensions Text",
+            "name": "dimensions_text",
+            "type": "wysiwyg",
+            "instructions": "Copy and paste table structure here. Our styling will make it look good. Add an image to associate with the table.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ab6c17526c88",
+                        "operator": "==",
+                        "value": "dimensions"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "toolbar": "basic",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5ab9a0557de9f",
+            "label": "Add a table image",
+            "name": "table_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5abaca43e301f",
+            "label": "Full width table needed?",
+            "name": "switch_col_widths",
+            "type": "true_false",
+            "instructions": "By default this will be unchecked. Checking the box will change the default setting column width from two columns to one full first column. The layout this fix is for the barrel hinge, but there may be others.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "message": "Check this box for a wider first column.",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ab5b157c7102",
+            "label": "Add extra dimension images",
+            "name": "add_images",
+            "type": "flexible_content",
+            "instructions": "Add images and insert a brief description between images if you like. Each row may be reordered.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ab6c17526c88",
+                        "operator": "==",
+                        "value": "dimensions"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5ab700c0fc62a": {
+                    "key": "5ab700c0fc62a",
+                    "name": "add_image",
+                    "label": "Add an image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5ab70072fc629",
+                            "label": "New Image",
+                            "name": "image_block",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "45",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5ab7002ffc628",
+                            "label": "Caption",
+                            "name": "caption",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": "wpautop"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "+ Add caption or Image",
+            "min": "",
+            "max": ""
+        },
+        {
+            "key": "field_5ab5b03941585",
+            "label": "Drawings Tab",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ab6c17526c88",
+                        "operator": "==",
+                        "value": "drawings"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ab70326fc62c",
+            "label": "Add select drawings",
+            "name": "add_select_drawings",
+            "type": "repeater",
+            "instructions": "Please add a more descriptive title if you have one. If not, we'll use the file name. The title will be used in names of links. Please add accurate titles and captions to each image. These will appear on hover and in the meta data. For files that are DXF or DWG drawings, we are substituting an SVG which is a converted DXF file. Our modal pop-over displays the SVG but the download will use the Autocad file. \r\n\r\nLink to convert DXF to SVG? Use http:\/\/www.dxfconverter.org\/",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ab6c17526c88",
+                        "operator": "==",
+                        "value": "drawings"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5ab66b94c7104",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "+ Add Drawing & Info",
+            "sub_fields": [
+                {
+                    "key": "field_5ada23ce86812",
+                    "label": "What type of file are we adding?",
+                    "name": "file_type",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "dxf_file": "Drawing",
+                        "pdf_file": "PDF"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "dxf_file",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5ab703befc62f",
+                    "label": "File Title",
+                    "name": "drawing_title",
+                    "type": "text",
+                    "instructions": "Give us a readable title, thanks!",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ada23ce86812",
+                                "operator": "==",
+                                "value": "dxf_file"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5ada23ce86812",
+                                "operator": "==",
+                                "value": "pdf_file"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ab66b94c7104",
+                    "label": "Product Drawing",
+                    "name": "drawing",
+                    "type": "file",
+                    "instructions": "Typically a DXF or DWG file",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ada23ce86812",
+                                "operator": "==",
+                                "value": "dxf_file"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5ada24f286813",
+                    "label": "Product Drawing SVG",
+                    "name": "drawing_svg",
+                    "type": "file",
+                    "instructions": "Add this SVG when adding a DWG or DXF.",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ada23ce86812",
+                                "operator": "==",
+                                "value": "dxf_file"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5ada5d0f0e92c",
+                    "label": "Add a PDF",
+                    "name": "pdf_type",
+                    "type": "file",
+                    "instructions": "Add the corresponding PDF",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5ada23ce86812",
+                                "operator": "==",
+                                "value": "pdf_file"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5addbe4af67db",
+            "label": "Add hinge drawings?",
+            "name": "common_drawings",
+            "type": "checkbox",
+            "instructions": "These will be placed below the added drawings, since they are more common. Select all that apply.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ab6c17526c88",
+                        "operator": "==",
+                        "value": "drawings"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "sizechart": "Nomograph (Sizing Chart)",
+                "nintydeg": "90 Degree Open",
+                "jambdetail": "Cased Jamb Detail",
+                "clearance": "Clearance Detail",
+                "hingeloc": "Hinge Location"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 1,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5b0f2874abf2c",
+            "label": "Documents Tab",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ab6c17526c88",
+                        "operator": "==",
+                        "value": "documents"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b0f28d7ddcd4",
+            "label": "Add select documents",
+            "name": "add_select_documents",
+            "type": "repeater",
+            "instructions": "Please add a more descriptive title if you have one. If not, we'll use the file name. The title will be used in names of links. Please add accurate titles and captions to each image. These will appear on hover and in the meta data.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ab6c17526c88",
+                        "operator": "==",
+                        "value": "documents"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "+ Add New Document",
+            "sub_fields": [
+                {
+                    "key": "field_5b0f28d7ddcd5",
+                    "label": "What type of file are we adding?",
+                    "name": "file_type",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "pdf_file": "PDF"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "default_value": "pdf_file",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5b0f28d7ddcd6",
+                    "label": "File Title",
+                    "name": "drawing_title",
+                    "type": "text",
+                    "instructions": "Give us a readable title, thanks!",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5b0f28d7ddcd9",
+                    "label": "Add a PDF",
+                    "name": "pdf_type",
+                    "type": "file",
+                    "instructions": "Add the corresponding PDF",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5b0f28d7ddcd5",
+                                "operator": "==",
+                                "value": "pdf_file"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5ab5b04616d6c",
+            "label": "Architectural Specs Tab",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ab6c17526c88",
+                        "operator": "==",
+                        "value": "specs"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5abbe89039a0c",
+            "label": "Opening description",
+            "name": "specs_caption",
+            "type": "textarea",
+            "instructions": "This will appear above the list of drawings.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5ab6c5e84c591",
+            "label": "Architectural Specs",
+            "name": "specs_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "See our Architectural Specifications page.",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5ab5b068a4a5f",
+            "label": "Video Tab",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ab6c17526c88",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ae0fb07dffee",
+            "label": "Add hinge installation video?",
+            "name": "hinge_installation",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Uncheck if you don't need this common video",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ab997dfcd4db",
+            "label": "Video description",
+            "name": "video_caption",
+            "type": "textarea",
+            "instructions": "This will appear below the tab title.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5ab9a781a3a8a",
+            "label": "Add videos",
+            "name": "add_videos",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5ab6c047c8d9a",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "+ Add another video?",
+            "sub_fields": [
+                {
+                    "key": "field_5ab6c047c8d9a",
+                    "label": "Add a video?",
+                    "name": "oembed",
+                    "type": "oembed",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "width": "",
+                    "height": ""
+                },
+                {
+                    "key": "field_5aba4a4dffaae",
+                    "label": "Add a video caption",
+                    "name": "video_caption",
+                    "type": "textarea",
+                    "instructions": "This will appear near the video.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,422 @@
+// REMOVED ULTRALATCH MAIN MENU STYLING TO REPLACE WITH SOSS STYLING | GRM 1-23-2019
+
+.navbar {
+  .navbar-brand img {
+    height: 75px;
+    width: auto;
+    max-width: 100%;
+  }
+
+  padding: .1rem 0;
+}
+.navbar {
+  .nav-link {
+    text-transform: uppercase;
+  }
+}
+.navbar-toggler {
+  align-self: flex-end;
+}
+.navbar-toggler-right {
+  top: -5.4rem;
+  right: 0;
+}
+.navbar-toggler-icon {
+  width: 3em;
+  height: 2.5em;
+}
+.bg-inverse .dropdown-menu {
+  background: lighten($inverse-bg, 5%);
+}
+//social media menu above logo
+.topmenu {
+  width: 100%;
+  background-color: rgb(236,236,236);
+  .social-nav {
+    .stack {
+      margin: 5px 0;
+    }
+  }
+  .shipping-message {
+    padding: 0 2rem;
+    font-size: 0.9rem;
+    color: rgb(165,0,0);
+  }
+}
+
+// full width edge to edge
+.main-nav {
+  background-color: rgb(206,206,206); //$gray;
+  width: 100%;
+}
+
+.header-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+ // margin-bottom: -0.7rem; // needed for card fold
+
+  .brand-logo { // svg logo
+    //height: 105px;
+    //width: 160px;
+    //margin: 1rem 0;
+  }
+
+  .heading-tagline {
+    font-size: larger;
+    font-style: italic;
+    display: flex;
+    justify-self: flex-end;
+  }
+
+  .banner-row {
+    background: url(../images/brunette.png) no-repeat top right;
+  }
+}
+
+
+// My Account in Menu
+#mega-menu-wrap-primary_navigation {
+  #mega-menu-primary_navigation {
+    &> li {
+      &:last-child {
+        //margin: 0 0px 0 0;
+        //display: flex !important;
+        //height: auto;
+        //vertical-align: middle;
+        &> .my-Account-nav {
+          display: flex;
+          justify-self: flex-end;
+          padding: 10px;
+          line-height: 1.6;
+          height: 40px;
+        }
+      }
+      &.mega-menu-megamenu {
+        &> .mega-sub-menu {
+          &> .mega-menu-row {
+            .mega-menu-column {
+              &.mega-sub-menu {
+                &.mega-menu-item {
+                  padding: 0 !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  $list-item-padding: 0.2rem;
+  // Mega Menu Widget Type called 'Navigation Menus'
+  #menu-product-category,
+  .product-categories {
+    list-style-type: none;
+    padding: 0;
+    .nav-item,
+    .cat-item {
+      padding: $list-item-padding 0 !important;
+      a {
+        padding: 0;
+      }
+    }
+  }
+  .woocommerce-widget-layered-nav-list__item {
+    &.wc-layered-nav-term {
+      padding: $list-item-padding 0;
+    }
+  }
+  background: transparent !important;
+
+  &> .mega-menu-link {
+    color: $brand-primary;
+    text-transform: uppercase;
+  }
+
+  .mega-menu-toggle {
+
+
+
+    // close block (mobile)
+    &.mega-menu-open {
+      .mega-toggle-block-1:before {
+        font-size: 30px;
+        margin-right: 4px;
+      }
+    }
+    .mega-toggle-block-right {
+      width: 90px;
+      position: absolute;
+      top: -4.5rem;
+      right: 0;
+
+      // fixes bug where mega menu toggle button link
+      // expanded to full height of viewport
+      height: 40px !important;
+    }
+    .mega-toggle-block-1:before {
+      font-size: 40px;
+      font-weight: 300;
+      float: right;
+    }
+    &.mega-menu-close {
+      display: none;
+    }
+  }
+
+
+  #mega-menu-primary_navigation {
+    &>.mega-menu-item {
+      &>.mega-menu-link {
+        transition: all ease 0.3s;
+        text-transform: uppercase !important; // this works
+        color: $brand-primary !important;
+        &:hover {
+          background: rgb(189, 189, 189) !important;
+        }
+      }
+    }
+
+
+    &> .mega-browse__category {
+      // have to force because of plugin
+
+      border-top: 10px solid darken($brand-primary, 10%) !important;
+      //border-bottom: 5px solid $brand-primary !important;
+      margin-top: -10px !important;
+
+      &> .mega-menu-link {
+        background: linear-gradient(to bottom, darken($brand-primary, 10%) 0%, $brand-primary 100%) !important;
+        text-transform: uppercase !important; // this works
+        color: white !important;
+        font-weight: 500 !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+
+        &:hover {
+          background: darken($brand-primary, 10%) !important;
+        }
+
+        &:after {
+          content: ""!important;
+          position: absolute!important;
+          top: -9px!important;
+          right: -8px!important;
+          width: 0!important;
+          height: 0!important;
+          border-bottom: 10px solid rgb(93, 93, 93) !important;
+          border-right: 8px solid rgba(0, 0, 0, 0) !important;
+
+        }
+      }
+    }
+  }
+}
+
+.mega-sticky-wrapper {
+  #mega-menu-wrap-primary_navigation {
+    .mega-menu-toggle {
+      height: 40px;
+      background: rgba(white, 0.8);
+      .mega-toggle-block-right {
+        position: fixed;
+        top: 0;
+        right: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: 382px ) {
+  // for a collapsed search field look at this: https://codepen.io/912lab/pen/LsplC
+  .heading-tagline {
+    font-size: smaller !important;
+    line-height: 1;
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 575px) {
+
+  .header-group {
+    .banner-row {
+      background: none;
+      justify-content: space-between;
+    }
+  }
+
+  input:-moz-placeholder {
+    color: #999;
+  }
+  input::-webkit-input-placeholder {
+    color: #999;
+  }
+}
+// Attempt to add folded card look, borrowed from Soss Catalog site
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation li>a.mega-menu-link:after {
+  content: '\f140';
+  display: inline-block;
+  font-family: dashicons;
+  margin: 0 0 0 6px;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: rotate(0);
+  color: inherit;
+}
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation>.mega-browse__category>.mega-menu-link {
+  border-left: 0 !important;
+}
+#mega-menu-wrap-primary_navigation #mega-menu-primary_navigation>.mega-browse__category>.mega-menu-link:after {
+  content: ""!important;
+  position: absolute!important;
+  top: -10px!important;
+  right: -9px!important;
+  width: 0!important;
+  height: 0!important;
+  border-bottom: 10px solid rgb(93, 93, 93)!important;
+  border-right: 8px solid rgba(0, 0, 0, 0)!important;
+}
+
+// end folded card
+
+@media only screen and (max-width: 699px) {
+  .search-bar {
+
+  }
+}
+@media only screen and (max-width: 599px ) {
+
+  #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation>.mega-browse__category>.mega-menu-link:after {
+    display: none;
+    content:"";
+  }
+
+    // fix for menu in mobile
+
+  .main-nav {
+    .container {
+      padding: 0;
+    }
+  }
+
+  #mega-menu-wrap-primary_navigation {
+    .main-nav {
+      .container {
+        padding: 0;
+      }
+    }
+  }
+  .mega-menu-wrap {
+    .mega-menu-toggle {
+      padding: 0 15px;
+    }
+  }
+
+  // First Browse Item
+  #mega-menu-wrap-primary_navigation {
+    #mega-menu-primary_navigation {
+      &>.mega-browse__category {
+        margin-top: 0 !important;
+        border-top: 0 !important;
+      }
+    }
+  }
+  #mega-menu-primary_navigation {
+    &> .mega-browse__category {
+      // have to force because of plugin
+
+      border-top: 0 !important;
+      //border-bottom: 5px solid $brand-primary !important;
+      margin-top: 0 !important;
+    }
+  }
+
+} // @media maxwidth 599
+@media only screen and ( min-width: 992px ) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (max-width: 991px) {
+
+  .search-bar {
+
+  }
+  .navbar-collapse {
+    display: block;
+  }
+  .navbar-toggleable-md>.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  // before scrolling at header, control how menu displays
+  #mega-menu-wrap-primary_navigation {
+    #mega-menu-primary_navigation {
+      & > .mega-menu-item {
+        width: 30%;
+        float: left;
+        clear: right;
+      }
+    }
+  }
+
+  // comes into play when user has scrolled below header
+  .mega-sticky-wrapper {
+    #mega-menu-wrap-primary_navigation {
+      .mega-menu-toggle {
+        height: 40px;
+        //background: rgba(black, 0.8);
+        .mega-toggle-block-right {
+          position: fixed;
+          top: 0;
+          width: 88px;
+        }
+        .mega-toggle-block-1 {
+          &::before {
+            color: white;
+          }
+          &::after {
+            color: white;
+          }
+        }
+      }
+      .mega-menu-item {
+        width: 30%;
+        float: left;
+        clear: right;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .navbar-toggleable-md>.container {
+    margin-left: initial;
+    margin-right: initial;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mega-sticky-wrapper {
+    #mega-menu-wrap-primary_navigation {
+      .mega-menu-toggle {
+        height: 40px;
+        // background: rgba(white, 0.8);
+        .mega-toggle-block {
+          //height: auto !important;
+        }
+        .mega-toggle-block-right {
+          position: fixed;
+          top: 0;
+          height: auto;
+        }
+      }
+      background: rgba(white, 0.9);
+      .mega-menu-item {
+        width: 50%;
+        float: left;
+        clear: right;
+      }
+    }
+  }
+}

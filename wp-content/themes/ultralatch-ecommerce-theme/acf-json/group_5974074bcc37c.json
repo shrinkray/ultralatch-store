@@ -1,0 +1,1826 @@
+{
+    "key": "group_5974074bcc37c",
+    "title": "Flexible Page Layouts",
+    "fields": [
+        {
+            "key": "field_5974074bd3ed0",
+            "label": "Content Sections",
+            "name": "content_sections",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "596eb13928c97": {
+                    "key": "596eb13928c97",
+                    "name": "card_builder",
+                    "label": "Card Builder",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5974074bd6934",
+                            "label": "Section Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "Give a title for this section. This is optional if the row does not need one.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5974074bd696d",
+                            "label": "Remove gutters?",
+                            "name": "remove_gutters",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Gutters between columns will be removed if checked.",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5974074bd69a1",
+                            "label": "Assemble Card",
+                            "name": "assemble_card",
+                            "type": "repeater",
+                            "instructions": "You'll need at least two cards to make it awesome. Three to four is nice.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "field_5974074bdcc7a",
+                            "min": 0,
+                            "max": 4,
+                            "layout": "block",
+                            "button_label": "+ Add a new card",
+                            "sub_fields": [
+                                {
+                                    "key": "field_597ea22adaec0",
+                                    "label": "Heading",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_5974074bdcc7a",
+                                    "label": "Card Title",
+                                    "name": "card_title",
+                                    "type": "text",
+                                    "instructions": "Not too much fanfare; a title is the first pitch.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_598a3c00c2f03",
+                                    "label": "Move card title to hover over image?",
+                                    "name": "over_image",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "Uncheck if card title should appear below image instead of on top.",
+                                    "default_value": 1,
+                                    "ui": 0,
+                                    "ui_on_text": "Yes",
+                                    "ui_off_text": "No"
+                                },
+                                {
+                                    "key": "field_598a3d0cc2f04",
+                                    "label": "Select a text color",
+                                    "name": "text_color",
+                                    "type": "color_picker",
+                                    "instructions": "Broad control over text color based on image background. The default is white.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_598a3c00c2f03",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": ""
+                                },
+                                {
+                                    "key": "field_5974074bdcd78",
+                                    "label": "Link Heading and Button",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_5974074bdcfa8",
+                                    "label": "Target",
+                                    "name": "target",
+                                    "type": "radio",
+                                    "instructions": "Will the link open a new tab or render a new page.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "_self": "Self",
+                                        "_blank": "New Tab"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "_self : Self",
+                                    "layout": "horizontal",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_5974074bdd01c",
+                                    "label": "Type",
+                                    "name": "type",
+                                    "type": "radio",
+                                    "instructions": "Internal gives options for the types of pages to open on the site. Custom offers the opportunity to link off-site to perhaps a Lead page or other resource.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "internal": "Internal",
+                                        "custom": "Custom"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "default_value": "internal",
+                                    "layout": "horizontal",
+                                    "return_format": "value",
+                                    "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_5974074bdd0bc",
+                                    "label": "Internal Link",
+                                    "name": "internal_link",
+                                    "type": "page_link",
+                                    "instructions": "Choose from the selection provided for the page you'd like.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5974074bdd01c",
+                                                "operator": "==",
+                                                "value": "internal"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "post",
+                                        "page",
+                                        "product"
+                                    ],
+                                    "taxonomy": "",
+                                    "allow_null": 0,
+                                    "allow_archives": 1,
+                                    "multiple": 0
+                                },
+                                {
+                                    "key": "field_5974074bdd164",
+                                    "label": "Custom Link",
+                                    "name": "custom_link",
+                                    "type": "url",
+                                    "instructions": "Only a full URL will work here.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5974074bdd01c",
+                                                "operator": "==",
+                                                "value": "custom"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5974074bdcdb8",
+                                    "label": "Button Toggle",
+                                    "name": "button_toggle",
+                                    "type": "true_false",
+                                    "instructions": "Link will be applied to the title area and more link. Choose to add a footer button below the text which fits our theme branding.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "Add a footer button too.",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5974074bdce4c",
+                                    "label": "Button Name",
+                                    "name": "button_name",
+                                    "type": "text",
+                                    "instructions": "Wording is very important. Uses love slightly directive buttons.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5974074bdcdb8",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "Click This",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5974074bdcf01",
+                                    "label": "Style",
+                                    "name": "style",
+                                    "type": "radio",
+                                    "instructions": "We're offering two brand colors. What other colors are you looking for? Let's explore this.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5974074bdcdb8",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "btn btn-primary cta-explore": "Blue",
+                                        "btn btn-primary cta-brand": "Red",
+                                        "cta-simple": "Linked Text"
+                                    },
+                                    "allow_null": 0,
+                                    "other_choice": 0,
+                                    "save_other_choice": 0,
+                                    "default_value": "cta-brand : Red",
+                                    "layout": "horizontal",
+                                    "return_format": "value"
+                                },
+                                {
+                                    "key": "field_5974074bdccbe",
+                                    "label": "Card Block",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_5974074bdccfd",
+                                    "label": "Card Text",
+                                    "name": "card_text",
+                                    "type": "textarea",
+                                    "instructions": "Similar to an excerpt, we are looking for a teasing line to grab one's attention.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 4,
+                                    "new_lines": ""
+                                },
+                                {
+                                    "key": "field_5974074bdcd3b",
+                                    "label": "Card Image",
+                                    "name": "card_image",
+                                    "type": "image_aspect_ratio_crop",
+                                    "instructions": "Like other images in this site, they are boxy. Looking for curves? Let's explore it.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "aspect_ratio_width": 545,
+                                    "aspect_ratio_height": 353,
+                                    "return_format": "id",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "596ed03353250": {
+                    "key": "596ed03353250",
+                    "name": "post_builder",
+                    "label": "Post Builder",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5974074bd69d4",
+                            "label": "Section Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "Add a title for this section. If you add no title, there will be no title.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5974074bd6b35",
+                            "label": "Columns",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5974074bd6ba1",
+                            "label": "Number of posts",
+                            "name": "number_of_posts",
+                            "type": "number",
+                            "instructions": "This number will dictate the number of posts displaying in this row. The CSS will adjust to equal columns. The code is designed to order these as 'latest posts' in descending order.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "min": 1,
+                            "max": 12,
+                            "step": ""
+                        },
+                        {
+                            "key": "field_5974074bd6a07",
+                            "label": "The Post",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5974074bd6a93",
+                            "label": "Post Type",
+                            "name": "post_type",
+                            "type": "select",
+                            "instructions": "Choose from the types of posts to display in a row.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "post": "Posts",
+                                "page": "Pages",
+                                "product": "Products"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_597f3d8b96249",
+                            "label": "Featured Image",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_597e6f5e98c41",
+                            "label": "Display the featured image?",
+                            "name": "display_featured_image",
+                            "type": "true_false",
+                            "instructions": "Decide whether to show the post featured image (thumbnail) or go without for a spartan text look.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Selected, posts will include a heading image.",
+                            "default_value": 1,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_597f3c3e2913a",
+                            "label": "The Excerpt",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_597e6edd98c40",
+                            "label": "Show the excerpt?",
+                            "name": "show_excerpt",
+                            "type": "true_false",
+                            "instructions": "This builder includes a method to show or hide the excerpt added for your convenience.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Selected, the post will include an excerpt description, if included with the post.",
+                            "default_value": 1,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_597f385e17146",
+                            "label": "Set excerpt length?",
+                            "name": "set_excerpt_length",
+                            "type": "true_false",
+                            "instructions": "This enables you to reign in excerpt length so the article shape can be consistent across posts. This enables a visual consistency but you can adjust by number of words set by a variable. This is applied to all posts in a section as specified.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_597e6edd98c40",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Check to set a limit on the number of words in an excerpt.",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_597f390b17148",
+                            "label": "Number of words",
+                            "name": "excerpt_limit",
+                            "type": "number",
+                            "instructions": "Provide a whole number value. This value is applied to all instances.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_597f385e17146",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 30,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "words",
+                            "min": "",
+                            "max": "",
+                            "step": 1
+                        },
+                        {
+                            "key": "field_597e74e698c44",
+                            "label": "Meta",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_597e72e198c42",
+                            "label": "Display meta content?",
+                            "name": "display_meta_content",
+                            "type": "true_false",
+                            "instructions": "Meta content can be useful or it can be overkill. Select which combination meets your needs.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "Check here if you wish to include any meta content on this post.",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_597e73a098c43",
+                            "label": "Which meta to include?",
+                            "name": "which_meta",
+                            "type": "radio",
+                            "instructions": "Select which combo suits your needs according to the current layout. Please inform the designer if you wish a different configuration.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_597e72e198c42",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "all": "Full complement of meta",
+                                "date": "Date displayed left justified",
+                                "date_author": "Date & Author",
+                                "date_cat": "Date & Category"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "594e7f7a56cdc": {
+                    "key": "594e7f7a56cdc",
+                    "name": "layout_cta_left_optin",
+                    "label": "Diagonal CTA Left with Check Mark Repeater",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5974074bd6d6c",
+                            "label": "Add Background Image",
+                            "name": "left_optin_background_image",
+                            "type": "image_crop",
+                            "instructions": "Image will appear on right of the row at desktop view. The image crop is vital in delivering a smaller-sized image to devices for display. While not required, please use an image of 900 x 600 or larger for this part. How much of the image that displays depends on the amount of text used. Use web formats such as JPG, PNG or SVG.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "crop_type": "hard",
+                            "target_size": "opt_in",
+                            "width": "",
+                            "height": "",
+                            "preview_size": "medium",
+                            "force_crop": "no",
+                            "save_in_media_library": "yes",
+                            "retina_mode": "no",
+                            "save_format": "url",
+                            "library": "all"
+                        },
+                        {
+                            "key": "field_5974074bd6c42",
+                            "label": "Heading & Image",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5974074bd6ccb",
+                            "label": "Add Section Title",
+                            "name": "left_optin_section_title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Key Selling Points",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5974074bd6e0d",
+                            "label": "Sub-Text",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5974074bd6ee9",
+                            "label": "Choose Content Layout",
+                            "name": "left_optin_toggle_sub_content",
+                            "type": "radio",
+                            "instructions": "For this layout you have two styles. One is an open paragraph styles and the other enables a three bullet configuration. Each check mark heading may include a link pointing to an internal page.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "1": "Paragraph Text",
+                                "0": "Three Feature Punchlist"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "punchlist",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5974074bd6f6f",
+                            "label": "Add Paragraph Text",
+                            "name": "left_optin_paragraph_text",
+                            "type": "wysiwyg",
+                            "instructions": "This gives you a little flexibility, but it is intended to limit how content is formatted. It is a little more than a text box yet not a full Wysiwyg field either. Restrictions help us stay within the bounds of our design.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd6ee9",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50%",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "text",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5974074bd7019",
+                            "label": "Three Row Punchlist Repeater",
+                            "name": "left_optin_punchlist_repeater",
+                            "type": "repeater",
+                            "instructions": "Add heading and brief, single paragraph description. Limit three.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd6ee9",
+                                        "operator": "==",
+                                        "value": "0"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 3,
+                            "layout": "block",
+                            "button_label": "+ Add Punchlist Item",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5974074c0db9d",
+                                    "label": "Sub-Heading",
+                                    "name": "left_optin_sub-heading",
+                                    "type": "text",
+                                    "instructions": "Give a brief heading.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "Placeholder",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_597e6230a6130",
+                                    "label": "Sub-Heading Link",
+                                    "name": "sub_heading_link",
+                                    "type": "page_link",
+                                    "instructions": "This is an optional page link to add to the heading.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5974074bd6ee9",
+                                                "operator": "==",
+                                                "value": "0"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "allow_archives": 0,
+                                    "multiple": 0
+                                },
+                                {
+                                    "key": "field_5974074c0dc66",
+                                    "label": "Paragraph",
+                                    "name": "left_optin_sub_paragraph",
+                                    "type": "textarea",
+                                    "instructions": "Add a brief description for the feature. Limit one paragraph.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "70",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "Placeholder",
+                                    "maxlength": "",
+                                    "rows": 3,
+                                    "new_lines": ""
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_5974074bd70c0",
+                            "label": "Button",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5974074bd7135",
+                            "label": "Add a CTA Button?",
+                            "name": "left_optin_toggle",
+                            "type": "true_false",
+                            "instructions": "The default settings show the button. Deselect to hide.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5974074bd71f5",
+                            "label": "Opt-In Button",
+                            "name": "optin_button",
+                            "type": "text",
+                            "instructions": "Compose a link that engages and asks the user to do something. Split test to determine what wording works best on this call to action (CTA).",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7135",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Learn More",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5974074bd7269",
+                            "label": "Link Target",
+                            "name": "optin_link_target",
+                            "type": "radio",
+                            "instructions": "The target determines what type of tab we are opening. Do we go to a new page or open this page in a new tab?",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7135",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "_self": "Self",
+                                "_blank": "New Tab"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5974074bd7341",
+                            "label": "Button Style",
+                            "name": "optin_button_style",
+                            "type": "radio",
+                            "instructions": "The designer used blue for 'Learn More' style buttons where the brand red color targeted sales.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7135",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "cta-explore": "Blue",
+                                "cta-brand": "Red"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "cta-brand : Red",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5974074bd7406",
+                            "label": "Link Type",
+                            "name": "optin_link_type",
+                            "type": "radio",
+                            "instructions": "Will this link point to an internal page or would you like to set a custom page or unique page such as for a Lead page. Use a custom link type for such a page.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7135",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "internal": "Internal",
+                                "custom": "Custom"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5974074bd7478",
+                            "label": "Link",
+                            "name": "optin_internal_link",
+                            "type": "page_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7135",
+                                        "operator": "==",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5974074bd7406",
+                                        "operator": "==",
+                                        "value": "internal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page",
+                                "post",
+                                "product"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "allow_archives": 1,
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_5974074bd751f",
+                            "label": "Link",
+                            "name": "optin_custom_link",
+                            "type": "url",
+                            "instructions": "Only a full URL will work here.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7135",
+                                        "operator": "==",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5974074bd7406",
+                                        "operator": "==",
+                                        "value": "custom"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "594e7eb109e81": {
+                    "key": "594e7eb109e81",
+                    "name": "layout_cta_right_optin",
+                    "label": "Diagonal CTA Right",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5974074bd76c5",
+                            "label": "Add Background Image",
+                            "name": "right_optin_background_image",
+                            "type": "image_crop",
+                            "instructions": "A background image will appear to left of text. The image crop is vital in delivering a smaller-sized image to devices for display. While not required, please use an image of 900 x 600 or larger for this part. How much of the image that displays depends on the amount of text used. Please do not attempt to start with images that are too big as WP will complain. An image that is less than 5000px wide is a good place to start. Use web formats such as JPG, PNG or SVG.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "70",
+                                "class": "",
+                                "id": ""
+                            },
+                            "crop_type": "hard",
+                            "target_size": "opt_in",
+                            "width": "",
+                            "height": "",
+                            "preview_size": "medium",
+                            "force_crop": "no",
+                            "save_in_media_library": "yes",
+                            "retina_mode": "no",
+                            "save_format": "url",
+                            "library": "all"
+                        },
+                        {
+                            "key": "field_5974074bd7590",
+                            "label": "Heading & Image",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5974074bd7651",
+                            "label": "Add Section Title",
+                            "name": "right_optin_section_title",
+                            "type": "text",
+                            "instructions": "Title of the section row.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "A Handle for You",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5974074bd776b",
+                            "label": "Content",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5974074bd7812",
+                            "label": "Add Content",
+                            "name": "right_optin_copy",
+                            "type": "wysiwyg",
+                            "instructions": "This gives you a little flexibility, but it is intended to limit how content is formatted. It is a little more than a text box yet not a full Wysiwyg field either. Restrictions help us stay within the bounds of our design.  Is there an optional layout you would like to try here? Please let me know.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "text",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5974074bd789d",
+                            "label": "Button",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5974074bd7944",
+                            "label": "Add a CTA Button?",
+                            "name": "right_optin_toggle",
+                            "type": "true_false",
+                            "instructions": "The default settings show the button. Deselect to hide.",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "30%",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 1,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5974074bd79b7",
+                            "label": "Button Text",
+                            "name": "optin_button",
+                            "type": "text",
+                            "instructions": "Compose a link that engages and asks the user to do something. Split test to determine what wording works best on this call to action (CTA).",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7944",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30%",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Submit",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5974074bd7a51",
+                            "label": "Button Style",
+                            "name": "optin_button_style",
+                            "type": "radio",
+                            "instructions": "The designer used blue for 'Learn More,' where the red targeted sales. There are no hard and fast rules.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7944",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "cta-explore": "Blue",
+                                "cta-brand": "Red"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "cta-brand : Red",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5974074bd7b20",
+                            "label": "Link Target",
+                            "name": "optin_link_target",
+                            "type": "radio",
+                            "instructions": "The target determines what type of tab we are opening. Do we go to a new page or open this page in a new tab?",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7944",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "_self": "Self",
+                                "_blank": "New Tab"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5974074bd7bd8",
+                            "label": "Link Type",
+                            "name": "optin_link_type",
+                            "type": "radio",
+                            "instructions": "Will this link point to an internal page or would you like to set a custom page or unique page such as for a Lead page. Use a custom link type for such a page.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7944",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "internal": "Internal",
+                                "custom": "Custom"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5974074bd7cc0",
+                            "label": "Link",
+                            "name": "optin_internal_link",
+                            "type": "page_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7944",
+                                        "operator": "==",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5974074bd7bd8",
+                                        "operator": "==",
+                                        "value": "internal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post",
+                                "page",
+                                "product"
+                            ],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "allow_archives": 1,
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_5974074bd7d8b",
+                            "label": "Link",
+                            "name": "optin_custom_link",
+                            "type": "url",
+                            "instructions": "Only a full URL will work here.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974074bd7944",
+                                        "operator": "==",
+                                        "value": "1"
+                                    },
+                                    {
+                                        "field": "field_5974074bd7bd8",
+                                        "operator": "==",
+                                        "value": "custom"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "30",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c62ee37a0cdf": {
+                    "key": "layout_5c62ee37a0cdf",
+                    "name": "video_block",
+                    "label": "Video Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c62ee45a0ce0",
+                            "label": "Video Embed",
+                            "name": "video_embed",
+                            "type": "oembed",
+                            "instructions": "Paste the video URL in the field.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "595aaa818d9e2": {
+                    "key": "595aaa818d9e2",
+                    "name": "standard_block",
+                    "label": "Standard Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5974c54d1aa74",
+                            "label": "Full Row Block",
+                            "name": "full_row_block",
+                            "type": "radio",
+                            "instructions": "This block style gives you the flexibility of a full-width text column. Or add an image to break up the space. Select Blockquote if you want to make a statement or quote. Attribute the quote to give credit.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "media": "WYSIWYG",
+                                "break": "Blockquote"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_5974c7861aa76",
+                            "label": "Block Type",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_597e5028390d6",
+                            "label": "Section Title",
+                            "name": "section_title",
+                            "type": "text",
+                            "instructions": "Add an optional section title; of course try it without if you'd rather.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974c54d1aa74",
+                                        "operator": "==",
+                                        "value": "media"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Section title goes here",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5974074bd7e3b",
+                            "label": "Text Block",
+                            "name": "text_block",
+                            "type": "wysiwyg",
+                            "instructions": "This gives you carte-blanche control over this row. Let's explore this to see what you need.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974c54d1aa74",
+                                        "operator": "==",
+                                        "value": "media"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5974c6fd1aa75",
+                            "label": "Break Block",
+                            "name": "break_block",
+                            "type": "textarea",
+                            "instructions": "This blockquote will be centered with heavy padding surrounding the words. Quote marks are included in the start and end corners. Select a background option to add a bit of interest.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974c54d1aa74",
+                                        "operator": "==",
+                                        "value": "break"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_597e32a0238fe",
+                            "label": "Credits",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974c54d1aa74",
+                                        "operator": "==",
+                                        "value": "break"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_597e13286d7d1",
+                            "label": "Credited to",
+                            "name": "credited_to",
+                            "type": "text",
+                            "instructions": "Give a name to give credit to the quote above. This is not necessary, but it is here if you need it.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974c54d1aa74",
+                                        "operator": "==",
+                                        "value": "break"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "William Shakespeare",
+                            "prepend": "— ",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_597e32b0238ff",
+                            "label": "Pattern",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974c54d1aa74",
+                                        "operator": "==",
+                                        "value": "break"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_597e1de4bf98f",
+                            "label": "Background Pattern",
+                            "name": "background_pattern",
+                            "type": "radio",
+                            "instructions": "Select from the provided background art options to display in the background of your quotations box. I've taken the liberty to add a few I like. I can add others if you prefer.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5974c54d1aa74",
+                                        "operator": "==",
+                                        "value": "break"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "seigaiha": "pattern of arcs",
+                                "struckaxiom": "isometric geometric pattern",
+                                "symphony": "swirls and gentle humor",
+                                "subtle_zebra_3d": "gentle waves",
+                                "scribble_light": "unpolished steel",
+                                "transparent": "blank"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "save_other_choice": 0,
+                            "default_value": "",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Section",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-secondary.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-secondary-full.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-home.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "featured_image",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "Layouts for the Home page, Uses Secondary Page templates",
+    "modified": 1550020772
+}

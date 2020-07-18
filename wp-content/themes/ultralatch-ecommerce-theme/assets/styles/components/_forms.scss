@@ -1,0 +1,91 @@
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+// Search Widget
+.sidebar {
+  @include media-breakpoint-down(lg) {
+    .widget_search .btn {
+      border: 0;
+      //padding: 5px;
+    }
+    .widget_search input {
+      margin-bottom: 15px;
+    }
+  }
+}
+// Gravity Forms
+
+// Email
+.gform_wrapper {
+  label {
+    &.gfield_label {
+      color: darken($gray-light, 10%) !important;
+      font-size: 1rem;
+    }
+  }
+}
+.cta-newsletter {
+
+  .gform_wrapper {
+    display: inline-flex !important;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    .gform_body {
+      margin-left: -2rem !important; // fix centering bug
+      .large {
+        padding: .5rem !important;
+      }
+    }
+    .gform_footer {
+      width: initial ;
+    }
+  }
+
+    @media only screen and ( max-width: 640px ) {
+
+    .gform_wrapper {
+      display: flex !important;
+      flex-flow: column wrap;
+      align-items: center;
+      .top_label .gfield_label { // causes problems for field, we don't need it
+        display: none;
+      }
+      .ginput_container {
+        margin: 0 !important;
+      }
+      .gform_footer {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .gfield { // help to position in row with button on mobile
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+      .gform_body {
+        width: 100% !important;
+        margin-left: 0;
+      }
+
+  }
+}
