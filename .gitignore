@@ -76,8 +76,8 @@ wp-content/mysql.sql
 /wp-admin
 /wp-includes
 
-!/local-adminer-S1SqcMFJb.php
-!/local-phpinfo.php
+/local-adminer-S1SqcMFJb.php
+/local-phpinfo.php
 
 /wp-content/index.php
 /wp-content/config.codekit3
@@ -100,9 +100,9 @@ wp-content/mysql.sql
 /wp-content/themes/ultralatch-ecommerce-theme/.babelrc/
 /wp-content/themes/ultralatch-ecommerce-theme/.bowerrc/
 /wp-content/themes/ultralatch-ecommerce-theme/dist/
-!/wp-content/themes/ultralatch-ecommerce-theme/package-lock.json
-!/wp-content/themes/ultralatch-ecommerce-theme/test.php
-!/wp-content/themes/ultralatch-ecommerce-theme/test2.php
+/wp-content/themes/ultralatch-ecommerce-theme/package-lock.json
+/wp-content/themes/ultralatch-ecommerce-theme/test.php
+/wp-content/themes/ultralatch-ecommerce-theme/test2.php
 
 
 
