@@ -17,11 +17,10 @@ wp-content/plugins/
 wp-content/mu-plugins/
 wp-content/revslider/
 wp-content/updraft/
-#wp-content/mu-plugins/
-
 wp-content/blogs.dir/
 wp-content/wp-rocket-config
 wp-content/upgrade/*
+wp-content/languages
 wp-content/backup-db/*
 wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
@@ -76,7 +75,12 @@ wp-content/mysql.sql
 /xmlrpc.php
 /wp-admin
 /wp-includes
+
+local-adminer-S1SqcMFJb.php
+local-phpinfo.php
+
 /wp-content/index.php
+/wp-content/config.codekit3
 /wp-content/themes/twentyten
 /wp-content/themes/twentyeleven
 /wp-content/themes/twentytwelve
@@ -92,23 +96,12 @@ wp-content/mysql.sql
 /wp-content/themes/storefront/
 
 
-/wp-content/themes/index.php
+/wp-content/themes/ultralatch-ecommerce-theme/node_modules/
+/wp-content/themes/ultralatch-ecommerce-theme/.babelrc/
+/wp-content/themes/ultralatch-ecommerce-theme/.bowerrc/
+/wp-content/themes/ultralatch-ecommerce-theme/dist/
+/wp-content/themes/ultralatch-ecommerce-theme/package-lock.json/
 
-/wp-content/plugins/akismet/
-
-
-/wp-content/themes/soss-catalog-theme/node_modules/
-/wp-content/themes/soss-catalog-theme/.babelrc/
-/wp-content/themes/soss-catalog-theme/.bowerrc/
-/wp-content/themes/soss-catalog-theme/dist/
-
-
-
-
-dist
-node_modules
-npm-debug.log
-vendor
 
 # large/disallowed file types
 # a CDN should be used for these
