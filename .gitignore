@@ -100,7 +100,7 @@ local-phpinfo.php
 /wp-content/themes/ultralatch-ecommerce-theme/.babelrc/
 /wp-content/themes/ultralatch-ecommerce-theme/.bowerrc/
 /wp-content/themes/ultralatch-ecommerce-theme/dist/
-/wp-content/themes/ultralatch-ecommerce-theme/package-lock.json/
+/wp-content/themes/ultralatch-ecommerce-theme/package-lock.json
 
 
 # large/disallowed file types
