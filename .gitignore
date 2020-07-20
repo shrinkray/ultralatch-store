@@ -12,21 +12,20 @@ Thumbs.db
 # wordpress specific
 #wp-config.php
 temp-write-test-*
-wp-content/uploads/
-wp-content/plugins/
-wp-content/mu-plugins/
-wp-content/revslider/
-wp-content/updraft/
-wp-content/blogs.dir/
-wp-content/wp-rocket-config
-wp-content/upgrade/*
-wp-content/languages
-wp-content/backup-db/*
-wp-content/advanced-cache.php
-wp-content/wp-cache-config.php
-wp-content/cache/*
-wp-content/cache/supercache/*
-wp-content/uploads/wp-migrate-db/*
+/wp-content/uploads/
+/wp-content/plugins/
+/wp-content/mu-plugins/
+/wp-content/revslider/
+/wp-content/updraft/
+/wp-content/blogs.dir/
+/wp-content/wp-rocket-config
+/wp-content/upgrade/
+/wp-content/languages/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+/wp-content/cache/*
+/wp-content/cache/supercache/
+/wp-content/uploads/wp-migrate-db/
 
 
 
