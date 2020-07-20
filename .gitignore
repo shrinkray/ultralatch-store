@@ -76,8 +76,8 @@ wp-content/mysql.sql
 /wp-admin
 /wp-includes
 
-local-adminer-S1SqcMFJb.php
-local-phpinfo.php
+/local-adminer-S1SqcMFJb.php
+/local-phpinfo.php
 
 /wp-content/index.php
 /wp-content/config.codekit3
