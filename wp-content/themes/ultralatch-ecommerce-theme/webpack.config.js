@@ -17,7 +17,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 // Clear ./dist folder
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const  { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 
 //
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -113,12 +113,7 @@ module.exports = {
   },
   plugins: [
     // clean out build directories on each build
-    new CleanWebpackPlugin({ // this pattern below works
-      dry: false,
-      verbose: true,
-
-      cleanOnceBeforeBuildPatterns: ['**/*', '!static-files*']
-    }),
+    new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
@@ -131,10 +126,12 @@ module.exports = {
       filename: './css/main.min.[hash].css'
     }),
     // copy files
-    new CopyWebpackPlugin([
-     // { from: 'assets/fonts', to: './fonts/' },
-      { from: 'assets/images/', to: './images/' }
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        // { from: 'assets/fonts', to: './fonts/' },
+        { from: 'assets/images/', to: './images/' }
+      ]
+    }),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i
     })
