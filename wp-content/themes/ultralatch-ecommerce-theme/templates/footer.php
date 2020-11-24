@@ -17,9 +17,12 @@ $email_help = get_field( 'email_help_message', 'option' );
 $email_field = get_field( 'email_field' );
 //$no_gradient = ( get_field( 'disable_gradient', 'option' );
 
+  // always return symphony
+  $pattern = 'symphony';
 
-
-
+  // Removes the tabindex from the form
+  // See: https://bensmann.no/gravity-forms-tabbing-tabindex-issues/
+  add_filter( 'gform_tabindex', '__return_false' );
 
 ?>
 
@@ -41,7 +44,7 @@ $email_field = get_field( 'email_field' );
 
               <?php
               gravity_form( 1, $display_title = false, $display_description = false, $display_inactive = false,
-                  $field_values = null, $ajax = false, $tabindex, $echo = true );
+                  $field_values = null, $ajax = false, $echo = true );
               ?>
 
               <div class="col-12 text-center text-muted">
