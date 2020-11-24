@@ -67,7 +67,11 @@ add_image_size('custom_icon', 300, 300, true);
 add_image_size('card_image', 545, 307, true);
 add_image_size('overview_square', 300, 300, true);
 add_image_size('overview_portrait', 300, 380, true);
-add_image_size('overview_landscape', 450, 300, true);
+add_image_size('home1', 512, 288, true);
+add_image_size('home2', 330, 185, true);
+add_image_size('home3', 255, 143, true);
+add_image_size('home4', 240, 135, true);
+add_image_size('home4', 210, 118, true);
 
 /**
  *  Add Image Crop Images
