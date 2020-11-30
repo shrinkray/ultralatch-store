@@ -35,6 +35,7 @@ if ( get_field( 'slider_show_slider' ))
      * This section pulls data from the ACF form found on the home page
      * @string: $combo is a shortcode string value
      * This places a slider originating from a plugin in the top area of the website above the content.
+     * @use Crelly Slider Plugin
      */
     $alt_code = get_field('place_shortcode');
     $combo = $alt_code ;
