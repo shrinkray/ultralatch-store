@@ -29,8 +29,7 @@ if ( get_field( 'slider_show_slider' ))
       do_action('get_header');
       get_template_part('templates/header');
       do_action('after_header');
-    ?>
-    <?php
+
     /**
      * This section pulls data from the ACF form found on the home page
      * @string: $combo is a shortcode string value
@@ -42,6 +41,10 @@ if ( get_field( 'slider_show_slider' ))
     if( $alt_code ) :
     echo do_shortcode( $combo );
     endif;
+
+      if ( is_front_page() ) :
+      include( 'templates/partials/promotion-ad-part.php');
+      endif;
     ?>
 
 
