@@ -7,7 +7,7 @@ const path = require('path');
 // https://stevenwestmoreland.com/2018/01/how-to-include-bootstrap-in-your-project-with-webpack.html
 
 // needed for webpack.ProvidePlugin
-var webpack = require("webpack");
+const webpack = require("webpack");
 
 // include the js minification plugin
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
@@ -27,8 +27,8 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 module.exports = {
   entry: [
 
-    './assets/scripts/slick.min.js',
-    './assets/scripts/bootstrap.min.js',
+     './assets/scripts/slick.min.js',
+     './assets/scripts/bootstrap.min.js',
     './assets/scripts/main.js',
     './assets/styles/main.scss'
   ],
