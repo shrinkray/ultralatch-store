@@ -1,13 +1,14 @@
 
 
 // FONTS
+body, h1, h2, h3, h4 {
+  font-family: $font-family-sans-serif;
+}
 h1 {
   font-weight: 500;
-  font-family: Montserrat, "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
 h2, h3 {
   font-weight: 400;
-  font-family: Montserrat, "Open Sans", "Helvetica Neue", Arial, sans-serif;
 }
 .card-title {
   font-size: 1.7rem;

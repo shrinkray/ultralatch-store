@@ -1,5 +1,5 @@
 // REMOVED ULTRALATCH MAIN MENU STYLING TO REPLACE WITH SOSS STYLING | GRM 1-23-2019
-
+$brand-primary: #cd3327;
 .navbar {
   .navbar-brand img {
     height: 75px;
@@ -70,7 +70,7 @@
   }
 
   .banner-row {
-    background: url(../images/brunette.png) no-repeat top right;
+    background: url("../images/brunette.png") no-repeat top right;
   }
 }
 
@@ -254,7 +254,7 @@
 #mega-menu-wrap-primary_navigation #mega-menu-primary_navigation li>a.mega-menu-link:after {
   content: '\f140';
   display: inline-block;
-  font-family: dashicons;
+  font-family: 'dashicons';
   margin: 0 0 0 6px;
   vertical-align: top;
   -webkit-font-smoothing: antialiased;
