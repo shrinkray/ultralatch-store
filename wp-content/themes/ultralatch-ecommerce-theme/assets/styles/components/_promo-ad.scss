@@ -27,7 +27,10 @@ $glow2: #ffc107; // brighter orange
     0 0 60px $glow2;
   }
 }
-
+.ad-wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
 .ad-spot {
   display: flex !important;
   align-items: center;
