@@ -52,13 +52,14 @@
     "postcss-cli": "^7.1.2",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.7.0",
+    "sass": "^1.29.0",
     "sass-loader": "^7.3.1",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^2.3.0",
     "webfonts-loader": "^4.4.0",
-    "webpack": "^4.44.1",
+    "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
