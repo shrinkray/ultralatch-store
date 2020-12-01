@@ -117,7 +117,7 @@ function widgets_init() {
 
   // Store Sidebar
   register_sidebar([
-      'name'          => __('Shop Main', 'ianua'),
+      'name'          => __('Shop Main', 'sage'),
       'id'            => 'shop-main',
       'before_widget' => '<section class="widget %1$s %2$s">',
       'after_widget'  => '</section>',
@@ -152,13 +152,11 @@ function display_sidebar() {
  * Theme assets
  */
 function assets() {
-
-  //wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Montserrat:400,700', false, null );
+//  wp_enqueue_style( 'google_fonts', '//fonts.googleapis.com/css?family=Montserrat:400,700', false, null );
+  wp_enqueue_style( 'dashicons' );
 //  wp_enqueue_style( 'sage/css', Assets\asset_path( 'styles/main.css' ), false, null );
-//
 //  wp_enqueue_script( 'sage/js', Assets\asset_path( 'scripts/main.js' ), array('jquery'), null, true );
-//
-// wp_enqueue_script( 'jquery-migrate', 'https://code.jquery.com/jquery-migrate-3.0.1.min.js', array('jquery'), '3.0.1', true );
+ wp_enqueue_script( 'jquery-migrate', 'https://code.jquery.com/jquery-migrate-3.0.1.min.js', array('jquery'), '3.0.1', true );
 
 
   /**
