@@ -113,9 +113,9 @@ h4.light {
   }
   .divider-diagonal-r,
   .divider-diagonal-l {
-    height: 100%;
-    position: absolute;
-    opacity: 0.08;
+    //height: 100%;
+    //position: absolute;
+    //opacity: 0.08;
     &:after, &:before {
       border-width: 0;
     }

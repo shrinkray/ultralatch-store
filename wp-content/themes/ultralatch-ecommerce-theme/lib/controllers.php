@@ -9,11 +9,11 @@ $controllers = [
   'lib/controllers/business-info-controller.php', // Site info
   'lib/controllers/navigation-controller.php', // Navigation controllers
   'lib/controllers/home-controller.php', // Home page controllers
-  'lib/controllers/Jumbotron.php', // Jumbotron class
-  'lib/controllers/Modal.php', // Base modal class
-  'lib/controllers/VideoModal.php', // Video modal class extends Modal
-  'lib/controllers/FormModal.php', // Form modal class extends Modal
-  'lib/controllers/Slider.php', // Base slider class
+//  'lib/controllers/Jumbotron.php', // Jumbotron class
+//  'lib/controllers/Modal.php', // Base modal class
+//  'lib/controllers/VideoModal.php', // Video modal class extends Modal
+//  'lib/controllers/FormModal.php', // Form modal class extends Modal
+//  'lib/controllers/Slider.php', // Base slider class
 ];
 
 foreach ( $controllers as $controller ) {

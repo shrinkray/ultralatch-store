@@ -13,6 +13,7 @@ $custom_types = [
  // 'lib/taxonomies/career_taxonomy.php', // Career taxonomy
  // 'lib/post-types/case-study.php', // Career CPT
   'lib/post-types/options.php', // options CPT
+  'lib/post-types/video.php', // Video CPT
 ];
 
 foreach ( $custom_types as $custom_type ) {

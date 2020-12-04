@@ -197,7 +197,7 @@ if ( have_rows( 'content_sections' ) ): ?>
         </div> <!-- close .container-fluid -->
       </div> <!-- close second .cta-list -->
 
-    
+
     <!-- VIDEO BLOCK :) -->
 
     <?php elseif ( get_row_layout() == 'video_block' ) :
@@ -206,7 +206,7 @@ if ( have_rows( 'content_sections' ) ): ?>
       ?>
 
       <div class="row row-break justify-content-sm-center">
-        <div class="col-md-8">
+        <div class="col-md-12 col-lg-8">
           <div class="embed-container">
             <?php if ( $video_url )  : ?>
               <div class="embed"><?php echo $video_url; ?></div>
