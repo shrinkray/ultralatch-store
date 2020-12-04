@@ -8,14 +8,14 @@
  */
 ?>
 
-  <div class="ad-wrapper" >
+  <div class="ul-ad-wrapper" >
     <div class="row">
 
       <div class="col col-sm-12">
-        <div class="ad-spot">
-          <div class="ad-door"></div>
-          <div class="ad-handle"></div>
-          <div class="ad-pitch">
+        <div class="ul-ad-spot">
+          <div class="ul-ad-door"></div>
+          <div class="ul-ad-handle"></div>
+          <div class="ul-ad-pitch">
             <h2 class="headline">Antimicrobial Finish!</h2>
             <div class="pitch">Help eliminate the spread of viruses with our new antimicrobial
               finishes on one of the most touched items in your daily life.</div>
