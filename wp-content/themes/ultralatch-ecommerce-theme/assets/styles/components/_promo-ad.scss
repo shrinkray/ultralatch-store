@@ -4,7 +4,7 @@ $adBkg: #f29700;
 $brand-primary: #cd3327;
 $adText: #231f20;
 
-//.ul-ad-SPOT DESIGN
+//.ul-antimicrobial-DESIGN
 
 .glow {
   -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -27,12 +27,12 @@ $glow2: #ffc107; // brighter orange
     0 0 60px $glow2;
   }
 }
-.ul-ad-wrapper {
+.ul-wrapper {
   max-width: 1110px;
   margin: 0 auto;
   display: block !important;
 }
-.ul-ad-spot {
+.ul-spot {
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@ $glow2: #ffc107; // brighter orange
   overflow: hidden;
   position: relative;
 
-  .ul-ad-door {
+  .ul-door {
     width: 450px;
     height: 100%;
     position: absolute;
@@ -54,7 +54,7 @@ $glow2: #ffc107; // brighter orange
     background-position-y: center;
     z-index: 5;
   }
-  .ul-ad-handle {
+  .ul-handle {
     background-size: 70%;
    background: transparent url("../images/handleCircleShort.png") no-repeat bottom right;
     position: absolute;
@@ -66,9 +66,9 @@ $glow2: #ffc107; // brighter orange
     z-index: 20;
   }
 
-  //.ul-ad-BLOCK TEXT
+  //.ul-antimicrobial-BLOCK TEXT
 
-  .ul-ad-pitch {
+  .ul-pitch {
     color: $adText;
     height: auto;
     display: grid;
@@ -118,15 +118,15 @@ $glow2: #ffc107; // brighter orange
   }
 }
 @media all and (max-width: 744px) {
-  .ul-ad-spot {
-    .ul-ad-handle {
+  .ul-spot {
+    .ul-handle {
       background-size: 71%;
     }
   }
 }
 @media all and (max-width: 667px) {
-  .ul-ad-spot {
-    .ul-ad-pitch {
+  .ul-spot {
+    .ul-pitch {
       color: white;
       grid-template-columns: 20px 1fr;
       grid-template-areas:
@@ -139,7 +139,7 @@ $glow2: #ffc107; // brighter orange
         text-shadow: none;
       }
     }
-    .ul-ad-door {
+    .ul-door {
       background-position-x: 0;
       background-position-y: 0;
       background-image: linear-gradient(
@@ -155,16 +155,16 @@ $glow2: #ffc107; // brighter orange
 }
 
 @media all and (max-width: 568px) {
-  .ul-ad-spot {
-    .ul-ad-handle {
+  .ul-spot {
+    .ul-handle {
       background-size: 60%;
     }
   }
 }
 
 @media (max-width: 414px) {
-  .ul-ad-spot {
-    .ul-ad-door {
+  .ul-spot {
+    .ul-door {
       background-image: linear-gradient(
           350deg,
           $adBkg,
@@ -179,8 +179,8 @@ $glow2: #ffc107; // brighter orange
 }
 
 @media all and (max-width: 280px) {
-  .ul-ad-spot {
-    .ul-ad-pitch {
+  .ul-spot {
+    .ul-pitch {
       color: white;
       grid-template-columns: 1fr;
       grid-template-areas:

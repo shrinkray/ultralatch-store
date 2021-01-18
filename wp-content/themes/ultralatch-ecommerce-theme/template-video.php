@@ -1,6 +1,6 @@
 <?php
   /**
-   * Template Name: Customer Portal Template
+   * Template Name: Video Template
    */
 ?>
 

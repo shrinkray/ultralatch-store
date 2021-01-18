@@ -1,0 +1,335 @@
+{
+    "key": "group_5a137036d9a90",
+    "title": "Add a Video Post",
+    "fields": [
+        {
+            "key": "field_5a13760b38afc",
+            "label": "Embed Video & Excerpt",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a1f676246613",
+            "label": "Make this a Featured Video?",
+            "name": "featured_video",
+            "type": "true_false",
+            "instructions": "Any video with this check will be sorted to the top with its own row and in descending order.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Check the box to feature this video.",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a13738cd6118",
+            "label": "Embed your video",
+            "name": "oembed",
+            "type": "oembed",
+            "instructions": "Find the YouTube video you wish to embed. Click on the 'Share' button. Copy the URL displayed and paste in the field below.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": 853,
+            "height": ""
+        },
+        {
+            "key": "field_5a1370d7d6114",
+            "label": "Add an excerpt",
+            "name": "add_excerpt",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5a137410daaf6",
+            "label": "Add a description about the video",
+            "name": "video_description",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "text",
+            "toolbar": "basic",
+            "media_upload": 1,
+            "delay": 1
+        },
+        {
+            "key": "field_5a1375d894a3e",
+            "label": "Title & Button",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a13708cd6113",
+            "label": "Video Page Title",
+            "name": "video_page_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a137257d6117",
+            "label": "Page link name",
+            "name": "page_link_name",
+            "type": "text",
+            "instructions": "Provide a button title like, 'Learn More'.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Learn More",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a1375fc38afb",
+            "label": "Social Media",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a13712ad6115",
+            "label": "Add social links?",
+            "name": "add_social_links",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "Check the field to add custom links to promote this video to social media.",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a1371a6d6116",
+            "label": "Select social services",
+            "name": "select_social_media",
+            "type": "checkbox",
+            "instructions": "Select which social properties you wish to display for this item.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a13712ad6115",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "facebook": "Facebook",
+                "twitter": "Twitter",
+                "linkedin": "LinkedIn"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 1,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5a1379b158969",
+            "label": "Facebook share link",
+            "name": "facebook_share_link",
+            "type": "url",
+            "instructions": "From YouTube's share popup, click on the Facebook icon to get a special share URL. Copy and paste it in the field below.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1371a6d6116",
+                        "operator": "==",
+                        "value": "facebook"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/www.facebook.com\/",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a137a345896a",
+            "label": "Twitter share link",
+            "name": "twitter_share_link",
+            "type": "url",
+            "instructions": "From YouTube's share popup, click on the Twitter icon to get a special share URL. Copy and paste it in the field below.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1371a6d6116",
+                        "operator": "==",
+                        "value": "twitter"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/www.twitter.com\/",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a137a7e5896b",
+            "label": "LinkedIn share link",
+            "name": "linkedin_share_link",
+            "type": "url",
+            "instructions": "From YouTube's share popup, click on the LinkedIn icon to get a special share URL. Copy and paste it in the field below.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1371a6d6116",
+                        "operator": "==",
+                        "value": "linkedin"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "https:\/\/www.linkedin.com\/",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5a1430f98eab1",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "video"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "send-trackbacks"
+    ],
+    "active": true,
+    "description": "Creates video posts in SOSS Videos",
+    "modified": 1607122184
+}

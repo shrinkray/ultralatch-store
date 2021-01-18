@@ -1,0 +1,41 @@
+{
+    "key": "group_5b7c59d11a6da",
+    "title": "Customer Portal Info (message)",
+    "fields": [
+        {
+            "key": "field_5b7c59e65c9f9",
+            "label": "How to add content",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Find \"Our Videos\" section near the top of the dashboard panel (on the left). Click Add New Video to create a new video post. It will be posted to this page dynamically. View All Videos list includes a column identifying if the post is 'Featured.'",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "template-video.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Info for Mike on how to add a new video post.",
+    "modified": 1607122184
+}
