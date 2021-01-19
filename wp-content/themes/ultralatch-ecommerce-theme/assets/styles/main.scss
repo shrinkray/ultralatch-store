@@ -1,20 +1,22 @@
 
 //@import "~typeface-montserrat/index.css";
 //@import "~font-awesome-webpack-4";
-@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-scss/bootstrap";
+@import "~bootstrap-scss/mixins";
+//@import "bundles/bootstrap.min.css";
+//@import "bundles/bootstrap-grid.min.css";
+//@import "bundles/slick";
 
 @import "common/variables";
-
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
-@import "components/forms-base";
+//@import "components/forms-base";
 @import "components/grid";
 @import "components/wp-classes";
 @import "components/slider-base";
 @import "components/promo-ad";
-@import "components/jumbotrons";
 @import "components/business-info";
 @import "layouts/header";
 @import "layouts/footer";
@@ -24,3 +26,4 @@
 @import "layouts/posts";
 @import "layouts/tinymce";
 @import "layouts/woocommerce";
+
