@@ -168,12 +168,15 @@ function assets() {
 
   $dirJS = new \DirectoryIterator(get_stylesheet_directory() . '/dist/js');
   $dirCSS = new \DirectoryIterator(get_stylesheet_directory() . '/dist/css');
+  $assetVer = time();
+
 
   foreach ($dirJS as $file) {
 
     if (pathinfo($file, PATHINFO_EXTENSION) === 'js') {
       $fullName = basename($file);
       $name = substr(basename($fullName), 0, strpos(basename($fullName), '.'));
+      $hashName = $name  . '.' . $assetVer . '.js';
 
       switch($name) {
 
@@ -187,7 +190,7 @@ function assets() {
 
       }
 
-      wp_enqueue_script( 'sage/js', Assets\asset_path( 'js/' . $fullName ), $deps, null, true );
+      wp_enqueue_script( 'sage/js', Assets\asset_path( 'js/' . $hashName ), $deps, null, true );
 
     }
 
@@ -202,8 +205,10 @@ function assets() {
     if (pathinfo($style, PATHINFO_EXTENSION) === 'css') {
       $fullName = basename($style);
       $name = substr(basename($fullName), 0, strpos(basename($fullName), '.'));
+      $hashName = $name  . '.' . $assetVer . '.css';
 
-      wp_enqueue_style( 'sage/css', Assets\asset_path( 'css/' . $fullName ), null, true );
+
+      wp_enqueue_style( 'sage/css', Assets\asset_path( 'css/' . $hashName ), null, true );
 
     } // enqueues the hashed style file
 
