@@ -81,31 +81,19 @@ wp-content/mysql.sql
 
 /wp-content/index.php
 /wp-content/config.codekit3
-/wp-content/themes/twentyten
-/wp-content/themes/twentyeleven
-/wp-content/themes/twentytwelve
-/wp-content/themes/twentythirteen
-/wp-content/themes/twentyfourteen
-/wp-content/themes/twentyfifteen
-/wp-content/themes/twentysixteen
-/wp-content/themes/twentyseventeen
-/wp-content/themes/twentyeighteen
-/wp-content/themes/twentynineteen
-/wp-content/themes/twentytwenty
 /wp-content/themes/wordpress-blank/
 /wp-content/themes/storefront/
 
 **/node_modules
 
-/wp-content/themes/ultralatch-ecommerce-theme/.babelrc/
-/wp-content/themes/ultralatch-ecommerce-theme/bower.json
 /wp-content/themes/ultralatch-ecommerce-theme/dist/
-/wp-content/themes/ultralatch-ecommerce-theme/package-lock.json
+#/wp-content/themes/ultralatch-ecommerce-theme/package-lock.json
 /wp-content/themes/ultralatch-ecommerce-theme/test.php
 /wp-content/themes/ultralatch-ecommerce-theme/test2.php
 /wp-content/themes/ultralatch-ecommerce-theme/package-lock.bkup.json
 /wp-content/themes/ultralatch-ecommerce-theme/package.bkup.json
 /wp-content/themes/ultralatch-ecommerce-theme/dist-test/
+/wp-content/themes/ultralatch-ecommerce-theme/package-mix/
 
 
 
