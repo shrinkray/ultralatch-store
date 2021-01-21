@@ -2,6 +2,7 @@
 
 namespace Roots\Sage\Setup;
 
+use DirectoryIterator;
 use Roots\Sage\Assets;
 
 /**
@@ -166,10 +167,8 @@ function assets() {
    * $dirJS and $dirCSS
    */
 
-  $dirJS = new \DirectoryIterator(get_stylesheet_directory() . '/dist/js');
-  $dirCSS = new \DirectoryIterator(get_stylesheet_directory() . '/dist/css');
-  $assetVer =  time();
-  $assetVer = ''; // strval($assetVer) . '.';
+  $dirJS = new DirectoryIterator(get_stylesheet_directory() . '/dist/js');
+  $dirCSS = new DirectoryIterator(get_stylesheet_directory() . '/dist/css');
 
 
   foreach ($dirJS as $file) {
@@ -177,10 +176,9 @@ function assets() {
     if (pathinfo($file, PATHINFO_EXTENSION) === 'js') {
       $fullName = basename($file);
       $name = substr(basename($fullName), 0, strpos(basename($fullName), '.'));
-      $hashName = $name  . '.' . $assetVer . 'js';
+      $hashName = $name  . '.'. 'js';
 
       switch($name) {
-
         case 'index':
           $deps = ['jquery'];
           break;
@@ -188,7 +186,6 @@ function assets() {
         default:
           $deps = null;
           break;
-
       }
 
       wp_enqueue_script( 'sage/js', Assets\asset_path( 'js/' . $hashName ), $deps, null, true );
@@ -206,7 +203,7 @@ function assets() {
     if (pathinfo($style, PATHINFO_EXTENSION) === 'css') {
       $fullName = basename($style);
       $name = substr(basename($fullName), 0, strpos(basename($fullName), '.'));
-      $hashName = $name  . '.' . $assetVer . 'css';
+      $hashName = $name  . '.' . 'css';
 
 
       wp_enqueue_style( 'sage/css', Assets\asset_path( 'css/' . $hashName ), null, true );
@@ -225,28 +222,30 @@ function assets() {
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100 );
 
+
 /**
  * Add the SVG Mime type to the uploader
  * @author Alain Schlesser (alain.schlesser@gmail.com)
- * @link https://gist.github.com/schlessera/1eed8503110fb3076e73
  *
- * @param  array $mimes list of mime types that are allowed by the
- * WordPress uploader
- *
- * @return array modified version of the $mimes array
+ * @param  array  $mimes  list of mime types that are allowed by the
+ *                        WordPress uploader
+ * @return array          modified version of the $mimes array
  *
  * @see https://codex.wordpress.org/Plugin_API/Filter_Reference/upload_mimes
  * @see http://www.w3.org/TR/SVG/mimereg.html
  */
-function add_svg_mime_type( $mimes ) {
+function as_svg_mime_type( $mimes ): array
+{
+
   // add official SVG mime type definition to the array of allowed mime types
   $mimes['svg'] = 'image/svg+xml';
 
   // return the modified array
   return $mimes;
 }
+add_filter( 'upload_mimes', __NAMESPACE__ . '\\as_svg_mime_type' );
 
-add_filter( 'upload_mimes', __NAMESPACE__ . '\\add_svg_mime_type' );
+
 
 /**
  * Admin Styles
