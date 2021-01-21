@@ -10,7 +10,7 @@
 Thumbs.db
 
 # wordpress specific
-#wp-config.php
+wp-config.php
 temp-write-test-*
 /wp-content/uploads/
 /wp-content/plugins/
