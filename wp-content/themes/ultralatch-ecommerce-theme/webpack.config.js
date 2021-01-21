@@ -20,7 +20,7 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const  { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 
 //
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 // image compression
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 

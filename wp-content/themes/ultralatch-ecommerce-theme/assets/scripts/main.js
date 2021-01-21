@@ -11,6 +11,9 @@
  * The routing is enclosed within an anonymous function so that you can
  * always reference jQuery with $, even when in .noConflict() mode.
  * ======================================================================== */
+import 'jquery/dist/jquery';
+import 'bootstrap/js/dist/tooltip';
+
 
 (function($) {
 
@@ -77,10 +80,12 @@
         }); // go top
 
         // Tooltips
-
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip();
+        $(document).ready(function () {
+          ('[data-toggle="tooltip"]').tooltip({
+            html: true
+          });
         });
+
 
         // Background Image for Diagonal Rows
         $(".cta-diagonal").css('background', function () {
@@ -103,12 +108,13 @@
           }
         });
 
-        // slick basic
-        $('.slider').slick({
-          autoplay: false,
-          dots: true,
-          adaptiveHeight: true
-        });
+
+        // // slick basic
+        // $('.slider').slick({
+        //   autoplay: false,
+        //   dots: true,
+        //   adaptiveHeight: true
+        // });
 
 
         // stop video playback on modal close
@@ -148,6 +154,8 @@
     //WooCommerce
     'ultralatch_satin_brass_pvd': {
       init: function () {
+
+
         // JavaScript to be fired on the woocommerce page
 
         // JavaScript to be fired on woocommerce page, after the init JS

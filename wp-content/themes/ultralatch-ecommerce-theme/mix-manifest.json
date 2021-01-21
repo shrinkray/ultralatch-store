@@ -1,14 +1,15 @@
 {
-    "/dist/js/app.js": "/dist/js/app.js",
+    "/dist/js/main.js": "/dist/js/main.js",
     "/dist/css/app.css": "/dist/css/app.css",
-    "/dist/css/style.css": "/dist/css/style.css",
-    "/dist/images/bg-double-dotted.gif": "/dist/images/bg-double-dotted.gif",
-    "/dist/images/bg-horizontal-dot.png": "/dist/images/bg-horizontal-dot.png",
-    "/dist/images/bg-single-dotted.gif": "/dist/images/bg-single-dotted.gif",
-    "/dist/images/bg-testimonial.png": "/dist/images/bg-testimonial.png",
-    "/dist/images/bg-vertical-dot.png": "/dist/images/bg-vertical-dot.png",
-    "/dist/images/bg-vertical-line.png": "/dist/images/bg-vertical-line.png",
-    "/dist/images/icons.png": "/dist/images/icons.png",
-    "/dist/images/next.png": "/dist/images/next.png",
-    "/dist/images/prev.png": "/dist/images/prev.png"
+    "/assets/build/main.css": "/assets/build/main.css",
+    "/dist/images/brunette.png": "/dist/images/brunette.png",
+    "/dist/images/door.jpg": "/dist/images/door.jpg",
+    "/dist/images/handleCircleShort.png": "/dist/images/handleCircleShort.png",
+    "/dist/images/login-soss.png": "/dist/images/login-soss.png",
+    "/dist/images/symphony.png": "/dist/images/symphony.png",
+    "/dist/images/transparent.png": "/dist/images/transparent.png",
+    "/dist/images/ultralatch-dimensions.png": "/dist/images/ultralatch-dimensions.png",
+    "/dist/images/ultralatch-exploded-view.png": "/dist/images/ultralatch-exploded-view.png",
+    "/dist/images/ultralatch1.svg": "/dist/images/ultralatch1.svg",
+    "/dist/images/ultralatch2.svg": "/dist/images/ultralatch2.svg"
 }

@@ -1,27 +1,47 @@
 /**
- * @date 12-24-2020
+ * @date 1/21/2021
  * @author Greg
- * TODO: Having problem with URL Processing
- * Help may be here: https://github.com/postcss/postcss-url
- * I think there may be better ways to handle the image URLs via Tailwinds and SCSS approach
- * Because this test is an existing theme with preexisting file paths for code we are not even using
- *   I dealt with the background images in elements.css .. Hopefully in a site built with SCSS,
- *   URL processing will be effective
+ * Build created with Node 12.14.0
+ * Laravel Mix v6.0.10
+ * Will have problems >= Node 14+, >= Bootstrap 5
+ * TODO: The `form-control-focus()` mixin has been deprecated as of v4.4.0. It will be removed entirely in v5.
  */
 
 const mix = require('laravel-mix');
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-//const CopyWebpackPlugin = require('copy-webpack-plugin');
+require('laravel-mix-postcss-config');
 mix
-  .js('assets/scripts/main.js', 'dist/js/main.js')
-  .sass('assets/styles/main.scss', 'dist/css/main.css')
+  .disableNotifications()
+   .js([ 'assets/scripts/slick.min.js', 'assets/scripts/main.js' ], 'dist/js/main.js')
+   .sass('assets/styles/main.scss', 'assets/build/main.css')
+  .options({
+    processCssUrls: false,
+    terser: {},
+    purifyCss: false,
+    // purifyCss: {},
+    postCss: [require('autoprefixer')],
+    clearConsole: false,
+    cssNano: {
+      // discardComments: {removeAll: true},
+    }
+  })
+  .postCss('assets/build/main.css', 'dist/css/app.css', [
+    require('postcss-custom-properties'),
+    require('postcss-sorting')({
+      'properties-order': 'alphabetical'
+    }),
+    require('postcss-url')({
+      // Seeking options that work with Mix
+    }),
+    require('cssnano')
+  ])
 
   .copyDirectory(
     'assets/images', 'dist/images/'
    )
-  .copyDirectory(
-    'assets/fonts', 'dist/fonts/'
-  )
+  // .copyDirectory(
+  //   'assets/fonts', 'dist/fonts/'
+  // )
 
   .browserSync({proxy: 'http://localhost:10068/'})
   .webpackConfig({
